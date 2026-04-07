@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | LSP Paintball & Soccer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <!-- NAVIGATION -->
+        <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="index.html" id="header-logo-link" class="flex items-center space-x-2">
+                    <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-12 w-auto brightness-110">
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="index.html" id="header-home-link" class="hover:text-[#ec1c25] transition-colors">Home</a>
+                    <a href="about.html" id="header-about-link" class="hover:text-[#ec1c25] transition-colors">About</a>
+                    <a href="rules-and-safety.html" id="header-rules-link" class="hover:text-[#ec1c25] transition-colors">Rules</a>
+                    <a href="gallery.html" id="header-gallery-link" class="hover:text-[#ec1c25] transition-colors">Gallery</a>
+                    <a href="frequently-asked-questions.html" id="header-faq-link" class="text-[#ec1c25]">FAQs</a>
+                    <a href="testimonials.html" id="header-testimonials-link" class="hover:text-[#ec1c25] transition-colors">Testimonials</a>
+                    <a href="contact.html" id="header-contact-link" class="hover:text-[#ec1c25] transition-colors">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <a href="contact.html" id="header-book-button" class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase">
+                        Book Session
+                    </a>
+                    <button class="lg:hidden text-white text-3xl" id="mobile-menu-button">
+                        <iconify-icon icon="lucide:menu"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="relative pt-40 pb-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/621a8325-0e1f-42da-b3f0-edb7bed51929/assets/4810a114-e923-4ce7-b514-9a010a5ff295.webp" alt="Arena background" class="w-full h-full object-cover opacity-20 grayscale">
+                <div class="absolute inset-0 hero-mini-gradient"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+                <span class="text-[#ec1c25] font-bold uppercase tracking-[0.4em] text-xs mb-4 block">Your Questions Answered</span>
+                <h1 class="font-anton text-7xl md:text-8xl mb-4">Frequently Asked <span class="text-[#ec1c25]">Questions</span></h1>
+                <p class="text-white/60 max-w-2xl mx-auto text-lg">Everything you need to know before heading to the battlefield at Nautica Beach.</p>
+            </div>
+        </section>
+
+        <!-- FAQ ACCORDION -->
+        <section class="py-20 bg-[#0A0A0A] paint-splatter-bg relative flex-grow">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1: What to wear -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden" open>
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">What do I wear?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            You can wear pretty much anything as we will provide overalls, and all protective gear [masks, neck protectors, body armor]. However, we do recommend you come with closed toe shoes and not slippers or sandals so you can move comfortably as paintball requires you to be active.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 2: Age Limit -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">What is the age limit?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            Children 15 years old and above are allowed to come and enjoy paintball. They must come with a parent/guardian and also sign the waiver.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 3: Open Play -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">What is Open Play?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            <p class="mb-4">Open Play is like pick up games of paintball. It is a mixture of players who show up without a reservation or booking. You play multiple short rounds.</p>
+                            <div class="bg-white/5 p-4 rounded-xl inline-block">
+                                <p class="font-bold text-white mb-1">Tuesday - Sunday</p>
+                                <p class="text-[#ec1c25]">11:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 4: Pain -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">Is it painful?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            Paintball is a very safe sport as long as safety rules are followed. Protective gear is provided including masks, neck protectors, and body armor to minimize impact.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 5: Getting Shot -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">If I get shot, do I play again?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            Yes. Once you get shot, you exit the arena and wait for the next round. As long as you still have pellets, you can continue playing multiple rounds during your session.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 6: Food/Drinks -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">Can I bring food and drinks?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            No, food and drinks are not allowed inside LSP. There are food and drink vendors available on the beach for your convenience before or after your session.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 7: Personal Marker -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">Can I bring my personal marker?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            Yes, but we will test and inspect it to ensure it meets our safety requirements and velocity limits before you are allowed to use it in the arena.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 8: Pellets -->
+                    <details class="faq-item group border border-white/10 rounded-2xl overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <h3 class="font-anton text-xl md:text-2xl tracking-wide">Can I bring my own pellets?</h3>
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-open:bg-[#ec1c25] group-open:border-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:plus" class="text-xl group-open:rotate-45 transition-transform"></iconify-icon>
+                            </div>
+                        </summary>
+                        <div class="p-6 pt-0 text-white/70 leading-relaxed text-lg">
+                            No. Only paintball pellets purchased from LSP are allowed for safety and consistency. Our pellets are high-quality and designed specifically for our arena equipment.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+                <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+            </div>
+            
+            <div class="relative z-10 container mx-auto px-6 text-center">
+                <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">READY TO JOIN THE ACTION?</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
+                    Lagos is waiting for you. Book your session today.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="contact.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
+                        Book Now
+                    </a>
+                    <div class="flex items-center gap-3 text-white">
+                        <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+                        <span class="text-xl font-bold">09048888466</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <!-- Brand -->
+                    <div>
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-16 mb-8">
+                        <p class="text-white/50 text-sm leading-relaxed">
+                            Lagos' premier speedball and beach soccer arena. Action-packed fun for the whole family at Nautica Beach.
+                        </p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Get In Touch</h4>
+                        <ul class="space-y-4 text-sm text-white/70">
+                            <li class="flex items-start">
+                                <iconify-icon icon="lucide:map-pin" class="mr-3 text-[#ec1c25] mt-1"></iconify-icon>
+                                Nautica Beach Resort, Elegushi, Ikate, Lekki
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:phone" class="mr-3 text-[#ec1c25]"></iconify-icon>
+                                09048888466
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:mail" class="mr-3 text-[#ec1c25]"></iconify-icon>
+                                lspparknautica@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Links -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Quick Links</h4>
+                        <ul class="space-y-3 text-sm text-white/70">
+                            <li><a href="about.html" id="footer-pricing-link" class="hover:text-[#ec1c25] transition-colors">View Pricing</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-rules-link" class="hover:text-[#ec1c25] transition-colors">Arena Rules</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-waiver-link" class="hover:text-[#ec1c25] transition-colors">Sign Waiver</a></li>
+                            <li><a href="frequently-asked-questions.html" id="footer-faq-link" class="hover:text-[#ec1c25] transition-colors">Safety FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Socials -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Follow Action</h4>
+                        <div class="flex space-x-4 mb-8">
+                            <a href="https://instagram.com/nauticabeachpaintball" id="footer-instagram-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ec1c25] transition-all">
+                                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+                            </a>
+                            <a href="https://tiktok.com/@nauticabeachpaintball" id="footer-tiktok-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ec1c25] transition-all">
+                                <iconify-icon icon="simple-icons:tiktok" class="text-xl"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-white/30 font-bold">@nauticabeachpaintball</p>
+                    </div>
+                </div>
+
+                <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
+                    <p>© 2024 Copenhagen Paintball Arena ApS. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

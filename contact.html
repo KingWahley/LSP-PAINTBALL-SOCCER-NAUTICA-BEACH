@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LSP Paintball & Soccer Lagos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col bg-[#0A0A0A]">
+        <!-- NAVIGATION -->
+        <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="index.html" id="header-logo-link" class="flex items-center space-x-2">
+                    <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-12 w-auto brightness-110">
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="index.html" id="header-home-link" class="hover:text-primary-red transition-colors">Home</a>
+                    <a href="about.html" id="header-about-link" class="hover:text-primary-red transition-colors">About</a>
+                    <a href="rules-and-safety.html" id="header-rules-link" class="hover:text-primary-red transition-colors">Rules</a>
+                    <a href="gallery.html" id="header-gallery-link" class="hover:text-primary-red transition-colors">Gallery</a>
+                    <a href="frequently-asked-questions.html" id="header-faq-link" class="hover:text-primary-red transition-colors">FAQs</a>
+                    <a href="testimonials.html" id="header-testimonials-link" class="hover:text-primary-red transition-colors">Testimonials</a>
+                    <a href="contact.html" id="header-contact-link" class="text-primary-red">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <a href="contact.html" id="header-book-button" class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase">
+                        Book Session
+                    </a>
+                    <button class="lg:hidden text-white text-3xl" id="mobile-menu-button">
+                        <iconify-icon icon="lucide:menu"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE HEADER -->
+        <section class="pt-40 pb-20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-[#ec1c25]/5 skew-x-12 translate-x-1/2"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="inline-block bg-[#ec1c25] px-4 py-1 rounded-sm text-xs font-bold uppercase tracking-widest mb-4">Contact Team</div>
+                <h1 class="font-anton text-7xl md:text-9xl mb-4 leading-none">
+                    Contact <span class="text-[#ec1c25]">Us</span>
+                </h1>
+                <p class="text-white/60 text-xl max-w-2xl leading-relaxed">
+                    Have questions about packages or ready to book your private event? Reach out to our mission command and we'll get you sorted.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT GRID -->
+        <section class="pb-32">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    
+                    <!-- CONTACT INFO & MAP -->
+                    <div class="space-y-12">
+                        <!-- Info Cards -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5">
+                                <div class="w-12 h-12 bg-[#ec1c25]/10 rounded-full flex items-center justify-center mb-6">
+                                    <iconify-icon icon="lucide:phone" class="text-2xl text-[#ec1c25]"></iconify-icon>
+                                </div>
+                                <h3 class="font-anton text-xl mb-2">Call Us</h3>
+                                <p class="text-white/50 text-sm mb-4">Fastest way to get answers</p>
+                                <a href="tel:09048888466" id="contact-call-link" class="text-lg font-bold hover:text-[#ec1c25] transition-colors">09048888466</a>
+                            </div>
+
+                            <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5">
+                                <div class="w-12 h-12 bg-[#ec1c25]/10 rounded-full flex items-center justify-center mb-6">
+                                    <iconify-icon icon="lucide:mail" class="text-2xl text-[#ec1c25]"></iconify-icon>
+                                </div>
+                                <h3 class="font-anton text-xl mb-2">Email Support</h3>
+                                <p class="text-white/50 text-sm mb-4">For business inquiries</p>
+                                <a href="mailto:lspparknautica@gmail.com" id="contact-email-link" class="text-sm font-bold hover:text-[#ec1c25] transition-colors break-words">lspparknautica@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-12 h-12 bg-[#ec1c25]/10 rounded-full flex-shrink-0 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:map-pin" class="text-2xl text-[#ec1c25]"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h3 class="font-anton text-xl mb-2">Arena Location</h3>
+                                    <p class="text-white/70 leading-relaxed">
+                                        Nautica Beach Resort, Elegushi, <br>
+                                        Ikate, Lekki, Lagos, Nigeria
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Embed -->
+                        <div class="rounded-2xl overflow-hidden h-[350px] border border-white/10 map-container grayscale">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.717144941913!2d3.4880556!3d6.4304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf574f1c96417%3A0xc47e30773d32849e!2sNautica%20Beach%20Resort!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="bg-[#1A1A1A] p-10 lg:p-12 rounded-3xl border border-white/5 relative">
+                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-[#ec1c25]/10 blur-3xl rounded-full"></div>
+                        <h2 class="font-anton text-4xl mb-8">Send a <span class="text-[#ec1c25]">Message</span></h2>
+                        
+                        <form class="space-y-6" id="contact-message-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-widest text-white/50">Full Name</label>
+                                    <input type="text" placeholder="John Doe" class="w-full form-input p-4 rounded-lg">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-widest text-white/50">Phone Number</label>
+                                    <input type="tel" placeholder="0900 000 0000" class="w-full form-input p-4 rounded-lg">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-white/50">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full form-input p-4 rounded-lg">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-widest text-white/50">Activity Type</label>
+                                    <select class="w-full form-input p-4 rounded-lg appearance-none">
+                                        <option value="paintball">Paintball Battle</option>
+                                        <option value="soccer">Soccer Session</option>
+                                        <option value="both">Combined Experience</option>
+                                        <option value="group">Group / Corporate Event</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-widest text-white/50">Preferred Date</label>
+                                    <input type="date" class="w-full form-input p-4 rounded-lg">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-white/50">Message</label>
+                                <textarea rows="4" placeholder="Tell us about your group or any special requirements..." class="w-full form-input p-4 rounded-lg resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" id="contact-form-submit-button" class="w-full red-glow-btn bg-[#ec1c25] text-white py-5 rounded-lg font-anton text-xl uppercase tracking-widest">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+                <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+            </div>
+            
+            <div class="relative z-10 container mx-auto px-6 text-center">
+                <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">READY TO JOIN THE ACTION?</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
+                    Lagos is waiting for you. Book your session today.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="contact.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
+                        Book Now
+                    </a>
+                    <div class="flex items-center gap-3 text-white">
+                        <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+                        <span class="text-xl font-bold">09048888466</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <!-- Brand -->
+                    <div>
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-16 mb-8">
+                        <p class="text-white/50 text-sm leading-relaxed">
+                            Lagos' premier speedball and beach soccer arena. Action-packed fun for the whole family at Nautica Beach.
+                        </p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Get In Touch</h4>
+                        <ul class="space-y-4 text-sm text-white/70">
+                            <li class="flex items-start">
+                                <iconify-icon icon="lucide:map-pin" class="mr-3 text-primary-red mt-1"></iconify-icon>
+                                Nautica Beach Resort, Elegushi, Ikate, Lekki
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:phone" class="mr-3 text-primary-red"></iconify-icon>
+                                09048888466
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:mail" class="mr-3 text-primary-red"></iconify-icon>
+                                lspparknautica@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Links -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Quick Links</h4>
+                        <ul class="space-y-3 text-sm text-white/70">
+                            <li><a href="about.html" id="footer-about-link" class="hover:text-primary-red transition-colors">About Us</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-rules-link" class="hover:text-primary-red transition-colors">Arena Rules</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-waiver-link" class="hover:text-primary-red transition-colors">Sign Waiver</a></li>
+                            <li><a href="frequently-asked-questions.html" id="footer-faq-link" class="hover:text-primary-red transition-colors">Safety FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Socials -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Follow Action</h4>
+                        <div class="flex space-x-4 mb-8">
+                            <a href="https://instagram.com/nauticabeachpaintball" id="footer-instagram-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+                            </a>
+                            <a href="https://tiktok.com/@nauticabeachpaintball" id="footer-tiktok-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="simple-icons:tiktok" class="text-xl"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-white/30 font-bold">@nauticabeachpaintball</p>
+                    </div>
+                </div>
+
+                <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
+                    <p>© 2024 Copenhagen Paintball Arena ApS. All Rights Reserved.</p>
+                    <p class="mt-4 md:mt-0">Designed for High Performance</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

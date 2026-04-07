@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | LSP Paintball & Soccer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col paint-splatter">
+        <!-- NAVIGATION -->
+        <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="index.html" id="header-logo-link" class="flex items-center space-x-2">
+                    <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-12 w-auto brightness-110">
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="index.html" id="header-home-link" class="hover:text-primary-red transition-colors">Home</a>
+                    <a href="about.html" id="header-about-link" class="hover:text-primary-red transition-colors">About</a>
+                    <a href="rules-and-safety.html" id="header-rules-link" class="hover:text-primary-red transition-colors">Rules</a>
+                    <a href="gallery.html" id="header-gallery-link" class="hover:text-primary-red transition-colors">Gallery</a>
+                    <a href="frequently-asked-questions.html" id="header-faq-link" class="hover:text-primary-red transition-colors">FAQs</a>
+                    <a href="testimonials.html" id="header-testimonials-link" class="text-primary-red">Testimonials</a>
+                    <a href="contact.html" id="header-contact-link" class="hover:text-primary-red transition-colors">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <a href="contact.html" id="header-book-button" class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase">
+                        Book Session
+                    </a>
+                    <button class="lg:hidden text-white text-3xl" id="mobile-menu-button">
+                        <iconify-icon icon="lucide:menu"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <main class="flex-grow pt-32 pb-24">
+            <!-- HERO SECTION -->
+            <section class="max-w-7xl mx-auto px-6 mb-20 text-center">
+                <span class="text-primary-red font-bold uppercase tracking-[0.4em] text-sm block mb-4">Warrior Stories</span>
+                <h1 class="font-anton text-6xl md:text-8xl mb-6">
+                    Real Action. <span class="text-[#ec1c25]">Real Reviews.</span>
+                </h1>
+                <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    Join the thousands of warriors who have experienced the adrenaline-pumping thrills at Nautica Beach Arena. 
+                </p>
+                
+                <!-- TRUST INDICATORS -->
+                <div class="flex flex-wrap justify-center gap-10 mt-12">
+                    <div class="flex flex-col items-center">
+                        <span class="font-anton text-4xl text-[#ec1c25]">5000+</span>
+                        <span class="text-[10px] uppercase tracking-widest text-white/40">Happy Players</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="font-anton text-4xl text-[#ec1c25]">4.9/5</span>
+                        <span class="text-[10px] uppercase tracking-widest text-white/40">Average Rating</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="font-anton text-4xl text-[#ec1c25]">100%</span>
+                        <span class="text-[10px] uppercase tracking-widest text-white/40">Adrenaline Guaranteed</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIAL GRID -->
+            <section class="max-w-7xl mx-auto px-6">
+                <!-- Corporate Group Section -->
+                <div class="mb-20">
+                    <div class="flex items-center space-x-4 mb-10">
+                        <iconify-icon icon="lucide:briefcase" class="text-3xl text-primary-red"></iconify-icon>
+                        <h2 class="font-anton text-3xl">Corporate & Team Bonding</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient">
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 leading-relaxed">
+                                "Perfect for group hangouts and team bonding. Our tech team spent the day here and the communication improvement since has been visible. Professional staff and great equipment!"
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">TO</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Tunde Olatunde</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">HR Manager, FinTech Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient">
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 leading-relaxed">
+                                "Well organized and enjoyable. The refereeing was fair and added to the excitement. Highly recommend for corporate retreats."
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">AM</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Adesola M.</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Event Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient">
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 leading-relaxed">
+                                "The best way to let off steam after a busy quarter. The facility at Nautica Beach is world-class."
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">KB</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Kingsley B.</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Sales Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Friends & Family Section -->
+                <div class="mb-20">
+                    <div class="flex items-center space-x-4 mb-10">
+                        <iconify-icon icon="lucide:users" class="text-3xl text-primary-red"></iconify-icon>
+                        <h2 class="font-anton text-3xl">Friends & Families</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Testimonial 4 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-primary-red/5 -mr-12 -mt-12 rounded-full group-hover:bg-primary-red/10 transition-colors"></div>
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 text-xl leading-relaxed">
+                                "Amazing experience! The paintball session was intense and fun. I brought my brothers for my birthday and we had a blast. The beach breeze makes a huge difference!"
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">CO</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Chidi Okoro</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Birthday Warrior</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-primary-red/5 -mr-12 -mt-12 rounded-full group-hover:bg-primary-red/10 transition-colors"></div>
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 text-xl leading-relaxed">
+                                "Our family weekend just got better. Even the kids (above 15) loved it. Very safe, gear was clean, and the staff explained everything clearly."
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">FA</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Funmi Adebayo</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Family Outing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soccer Enthusiasts -->
+                <div class="mb-10">
+                    <div class="flex items-center space-x-4 mb-10">
+                        <iconify-icon icon="lucide:trophy" class="text-3xl text-primary-red"></iconify-icon>
+                        <h2 class="font-anton text-3xl">Soccer Warriors</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonial 6 -->
+                        <div class="bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover-lift testimonial-gradient">
+                            <div class="flex text-[#ec1c25] mb-6">
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                                <iconify-icon icon="mdi:star"></iconify-icon>
+                            </div>
+                            <p class="text-white/80 italic mb-8 leading-relaxed">
+                                "The best beach soccer pitch in Lagos. We rent it every Sunday. Playing near the ocean is refreshing!"
+                            </p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-primary-red/20 flex items-center justify-center mr-4 border border-primary-red/30">
+                                    <span class="font-bold text-primary-red">SD</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm uppercase">Seyi D.</h4>
+                                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Lekki FC Captain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- CTA Section -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+                <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+            </div>
+            
+            <div class="relative z-10 container mx-auto px-6 text-center">
+                <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">READY TO JOIN THE ACTION?</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
+                    Lagos is waiting for you. Book your session today.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="contact.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
+                        Book Now
+                    </a>
+                    <div class="flex items-center gap-3 text-white">
+                        <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+                        <span class="text-xl font-bold">09048888466</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <!-- Brand -->
+                    <div>
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/brand-assets/paintballarena.dk/logo-1775490305472.png" alt="LSP Logo" class="h-16 mb-8">
+                        <p class="text-white/50 text-sm leading-relaxed">
+                            Lagos' premier speedball and beach soccer arena. Action-packed fun for the whole family at Nautica Beach.
+                        </p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Get In Touch</h4>
+                        <ul class="space-y-4 text-sm text-white/70">
+                            <li class="flex items-start">
+                                <iconify-icon icon="lucide:map-pin" class="mr-3 text-primary-red mt-1"></iconify-icon>
+                                Nautica Beach Resort, Elegushi, Ikate, Lekki
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:phone" class="mr-3 text-primary-red"></iconify-icon>
+                                09048888466
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:mail" class="mr-3 text-primary-red"></iconify-icon>
+                                lspparknautica@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Links -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Quick Links</h4>
+                        <ul class="space-y-3 text-sm text-white/70">
+                            <li><a href="about.html" id="footer-pricing-link" class="hover:text-primary-red transition-colors text-xs uppercase tracking-widest font-bold">View Pricing</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-rules-link" class="hover:text-primary-red transition-colors text-xs uppercase tracking-widest font-bold">Arena Rules</a></li>
+                            <li><a href="rules-and-safety.html" id="footer-waiver-link" class="hover:text-primary-red transition-colors text-xs uppercase tracking-widest font-bold">Sign Waiver</a></li>
+                            <li><a href="frequently-asked-questions.html" id="footer-faq-link" class="hover:text-primary-red transition-colors text-xs uppercase tracking-widest font-bold">Safety FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Socials -->
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Follow Action</h4>
+                        <div class="flex space-x-4 mb-8">
+                            <a href="https://instagram.com/nauticabeachpaintball" id="footer-instagram-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+                            </a>
+                            <a href="https://tiktok.com/@nauticabeachpaintball" id="footer-tiktok-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="simple-icons:tiktok" class="text-xl"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-white/30 font-bold">@nauticabeachpaintball</p>
+                    </div>
+                </div>
+
+                <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
+                    <p>© 2024 Copenhagen Paintball Arena ApS. All Rights Reserved.</p>
+                    <p class="mt-4 md:mt-0">Designed for High Performance</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
