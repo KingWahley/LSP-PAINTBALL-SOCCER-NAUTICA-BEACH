@@ -1,11 +1,11 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
 
 :root {
-    --color-brand-primary: #ec1c25;
-    --color-brand-primary-hover: #ff3333;
-    --color-brand-primary-deep: #d11921;
-    --color-brand-secondary: #234923;
-    --color-brand-accent: #cc3366;
+    --color-brand-primary: #556b2f;
+    --color-brand-primary-hover: #6f8650;
+    --color-brand-primary-deep: #3f5121;
+    --color-brand-secondary: #3a4a22;
+    --color-brand-accent: #7a8f57;
     --color-bg-dark: #0a0a0a;
     --color-bg-dark-alt: #111111;
     --color-surface: #1a1a1a;
@@ -13,9 +13,9 @@
     --color-card-dark: #2e2e2e;
     --color-text-muted: #808080;
     --color-white-rgb: 255 255 255;
-    --color-brand-primary-rgb: 236 28 37;
-    --color-brand-secondary-rgb: 35 73 35;
-    --color-brand-accent-rgb: 204 51 102;
+    --color-brand-primary-rgb: 85 107 47;
+    --color-brand-secondary-rgb: 58 74 34;
+    --color-brand-accent-rgb: 122 143 87;
     --color-bg-dark-rgb: 10 10 10;
     --color-bg-dark-alt-rgb: 17 17 17;
     --color-surface-rgb: 26 26 26;
@@ -379,4 +379,308 @@ summary::-webkit-details-marker {
 
 .group[open] .group-open\:border-\[\#ec1c25\] {
     border-color: var(--color-brand-primary) !important;
+}
+
+.gallery-page {
+    background:
+        radial-gradient(circle at top, rgb(var(--color-brand-primary-rgb) / 0.12), transparent 30%),
+        linear-gradient(180deg, #030503 0%, #070907 45%, #0b0e0b 100%);
+}
+
+#gallery-sections {
+    isolation: isolate;
+    position: relative;
+}
+
+#gallery-sections::before {
+    backdrop-filter: blur(18px);
+    background:
+        linear-gradient(180deg, rgb(var(--color-bg-dark-rgb) / 0.94) 0%, rgb(var(--color-bg-dark-alt-rgb) / 0.96) 100%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.gallery-hero-panel {
+    background:
+        radial-gradient(circle at 50% 0%, rgb(var(--color-brand-primary-rgb) / 0.2), transparent 38%),
+        linear-gradient(180deg, rgb(var(--color-brand-secondary-rgb) / 0.22) 0%, rgb(var(--color-bg-dark-rgb) / 0.92) 45%, rgb(var(--color-bg-dark-alt-rgb) / 0.98) 100%);
+    border-bottom: 1px solid rgb(var(--color-brand-primary-rgb) / 0.16);
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-hero-panel::before {
+    background-image:
+        linear-gradient(to right, rgb(var(--color-white-rgb) / 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(var(--color-white-rgb) / 0.08) 1px, transparent 1px);
+    background-size: 54px 54px;
+    content: "";
+    inset: 0;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+    position: absolute;
+}
+
+.gallery-hero-copy {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-scroll-indicator {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-top: 2.25rem;
+}
+
+.gallery-scroll-indicator__mouse {
+    align-items: flex-start;
+    border: 1px solid rgb(var(--color-brand-primary-rgb) / 0.48);
+    border-radius: 9999px;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    padding-top: 0.45rem;
+    width: 1.75rem;
+}
+
+.gallery-scroll-indicator__wheel {
+    animation: gallery-scroll-bounce 1.6s ease-in-out infinite;
+    background: var(--color-brand-accent);
+    border-radius: 9999px;
+    display: block;
+    height: 0.55rem;
+    width: 0.3rem;
+}
+
+@keyframes gallery-scroll-bounce {
+    0% {
+        opacity: 0.25;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0.8rem);
+    }
+
+    100% {
+        opacity: 0.25;
+        transform: translateY(0);
+    }
+}
+
+.sticky-gallery-shell {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.gallery-section-menu {
+    align-items: stretch;
+    backdrop-filter: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.45rem;
+    justify-content: center;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    position: static;
+    width: 100%;
+}
+
+.gallery-section-button {
+    display: block;
+    background: transparent;
+    border: 1px solid rgb(var(--color-white-rgb) / 0.1);
+    border-radius: 9999px;
+    color: rgb(var(--color-white-rgb) / 0.7);
+    cursor: pointer;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    padding: 0.55rem 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.gallery-section-button:hover,
+.gallery-section-button.is-active {
+    background: var(--color-brand-primary);
+    border-color: var(--color-brand-primary);
+    color: white;
+}
+
+.gallery-panel {
+    display: none;
+}
+
+.gallery-panel.is-active {
+    display: block;
+}
+
+.gallery-panel.is-active .sticky-gallery-card,
+.gallery-panel.is-active .sticky-gallery-feature {
+    animation: gallery-item-in 0.6s ease both;
+}
+
+.gallery-panel.is-active .sticky-gallery-card:nth-child(1),
+.gallery-panel.is-active .sticky-gallery-feature:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.gallery-panel.is-active .sticky-gallery-card:nth-child(2),
+.gallery-panel.is-active .sticky-gallery-feature:nth-child(2) {
+    animation-delay: 0.14s;
+}
+
+.gallery-panel.is-active .sticky-gallery-card:nth-child(3),
+.gallery-panel.is-active .sticky-gallery-feature:nth-child(3) {
+    animation-delay: 0.23s;
+}
+
+.gallery-panel.is-active .sticky-gallery-card:nth-child(4) {
+    animation-delay: 0.32s;
+}
+
+.gallery-panel.is-active .sticky-gallery-card:nth-child(5) {
+    animation-delay: 0.41s;
+}
+
+@keyframes gallery-item-in {
+    0% {
+        opacity: 0;
+        transform: translateY(18px) scale(0.985);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.sticky-gallery-column {
+    display: grid;
+    gap: 1rem;
+}
+
+.sticky-gallery-card {
+    background: rgb(var(--color-white-rgb) / 0.03);
+    border: 1px solid rgb(var(--color-white-rgb) / 0.08);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.sticky-gallery-card img {
+    display: block;
+    height: 24rem;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.sticky-gallery-card:hover img {
+    transform: scale(1.03);
+}
+
+.sticky-gallery-meta {
+    align-items: end;
+    background: linear-gradient(180deg, transparent 10%, rgb(var(--color-bg-dark-rgb) / 0.85) 100%);
+    display: flex;
+    inset: 0;
+    padding: 1.25rem;
+    position: absolute;
+}
+
+.sticky-gallery-tag {
+    color: var(--color-brand-accent);
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
+}
+
+.sticky-gallery-center {
+    display: grid;
+    gap: 1rem;
+}
+
+.sticky-gallery-feature {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 18rem;
+}
+
+.sticky-gallery-feature img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sticky-gallery-note {
+    background: linear-gradient(135deg, rgb(var(--color-brand-primary-rgb) / 0.22), rgb(var(--color-bg-dark-alt-rgb) / 0.92));
+    border: 1px solid rgb(var(--color-brand-primary-rgb) / 0.28);
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.gallery-footer-wordmark {
+    background: linear-gradient(to right, #6b7280, #1f2937);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(4rem, 16vw, 14rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(5rem);
+}
+
+.gallery-footer-cap {
+    background: #000;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    display: grid;
+    min-height: 10rem;
+    place-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .sticky-gallery-shell {
+        align-items: start;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sticky-gallery-center {
+        position: sticky;
+        top: 6rem;
+        height: calc(100vh - 7rem);
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+
+    .sticky-gallery-feature {
+        min-height: 0;
+    }
 }
