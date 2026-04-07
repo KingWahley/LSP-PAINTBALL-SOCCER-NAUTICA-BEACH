@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -83,14 +83,17 @@
             >Contact</a
           >
         </nav>
-        <div>
+        <div class="flex items-center gap-3">
           <a
             href="contact.html"
             id="header-book-button"
-            class="primary-button px-8 py-3 rounded-full uppercase text-sm font-bold"
+            class="primary-button px-8 py-3 rounded-full uppercase text-sm font-bold hidden sm:inline-flex"
           >
             Book Session
           </a>
+          <button class="lg:hidden text-white" id="mobile-menu-button" type="button">
+            <iconify-icon icon="lucide:menu"></iconify-icon>
+          </button>
         </div>
       </nav>
 
@@ -337,7 +340,7 @@
                 class="h-12 mb-6"
               />
               <p class="text-muted text-sm leading-relaxed">
-                Copenhagen Paintball Arena ApS presents LSP Paintball & Soccer -
+                LSP PAINTBALL & SOCCER presents LSP Paintball & Soccer -
                 the ultimate adrenaline destination at Nautica Beach Resort.
               </p>
             </div>
@@ -422,7 +425,7 @@
             class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
           >
             <p class="text-muted text-xs">
-              � 2026 Copenhagen Paintball Arena ApS. All rights reserved.
+              © 2026 LSP PAINTBALL & SOCCER. All rights reserved.
             </p>
             <div class="flex gap-8">
               <a
@@ -454,6 +457,9 @@
         });
       })();
     </script>
-  </body>
+      <script src="scripts/mobile-nav.js"></script>
+</body>
 </html>
+
+
 
