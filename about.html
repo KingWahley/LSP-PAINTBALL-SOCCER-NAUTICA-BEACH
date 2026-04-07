@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -259,14 +259,27 @@
                 </div>
 
                 <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
-                    <p>� 2024 Copenhagen Paintball Arena ApS. All Rights Reserved.</p>
+                    <p>© 2024 Copenhagen Paintball Arena ApS. All Rights Reserved.</p>
                     <p class="mt-4 md:mt-0">Designed for High Performance</p>
                 </div>
             </div>
         </footer>
     </div>
+    <script>
+        (function () {
+            function updateHeaderScrollState() {
+                document.body.classList.toggle('nav-scrolled', window.scrollY > 8);
+            }
+
+            updateHeaderScrollState();
+            window.addEventListener('scroll', updateHeaderScrollState, {
+                passive: true
+            });
+        }());
+    </script>
 </body>
 </html>
+
 
 
 

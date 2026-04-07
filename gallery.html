@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -581,8 +581,21 @@
             }
         }());
     </script>
+    <script>
+        (function () {
+            function updateHeaderScrollState() {
+                document.body.classList.toggle('nav-scrolled', window.scrollY > 8);
+            }
+
+            updateHeaderScrollState();
+            window.addEventListener('scroll', updateHeaderScrollState, {
+                passive: true
+            });
+        }());
+    </script>
 </body>
 </html>
+
 
 
 

@@ -147,7 +147,7 @@
         </div>
 
         <div
-          class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:block"
+          class="home-hero-scroll-indicator absolute bottom-4 left-1/2 -translate-x-1/2 z-10"
         >
           <div class="gallery-scroll-indicator" aria-hidden="true">
             <span class="gallery-scroll-indicator__mouse">
@@ -171,7 +171,7 @@
               <img
                 src="assets/images/IMG_5470.webp"
                 alt="LSP Arena Interior"
-                class="rounded-2xl shadow-2xl relative z-10 grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                class="home-intro-image rounded-2xl shadow-2xl relative z-10 grayscale-[30%] hover:grayscale-0 transition-all duration-700"
               />
             </div>
             <div>
@@ -442,6 +442,18 @@
         </div>
       </footer>
     </div>
+    <script>
+      (function () {
+        function updateHeaderScrollState() {
+          document.body.classList.toggle("nav-scrolled", window.scrollY > 8);
+        }
+
+        updateHeaderScrollState();
+        window.addEventListener("scroll", updateHeaderScrollState, {
+          passive: true,
+        });
+      })();
+    </script>
   </body>
 </html>
 

@@ -131,6 +131,14 @@ body.home-page h6 {
     margin-bottom: 0;
 }
 
+.home-hero-scroll-indicator {
+    display: block;
+}
+
+.home-intro-image {
+    width: 100%;
+}
+
 .section-title {
     font-size: clamp(36px, 6vw, 63px);
     line-height: 1.1;
@@ -171,14 +179,30 @@ body.home-page h6 {
 }
 
 .feature-card {
-    background: var(--color-card-dark);
+    background: linear-gradient(180deg, rgb(var(--color-surface-rgb) / 0.96) 0%, rgb(var(--color-bg-dark-alt-rgb) / 0.96) 100%);
     border: 1px solid rgb(var(--color-white-rgb) / 0.05);
+    overflow: hidden;
+    position: relative;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .feature-card:hover {
     border-color: var(--color-brand-primary);
     transform: scale(1.02);
+}
+
+.feature-card>* {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card::before {
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    content: '';
+    inset: 0;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 0;
 }
 
 .text-muted {
@@ -769,6 +793,11 @@ summary::-webkit-details-marker {
 }
 
 @media (min-width: 1024px) {
+    .home-intro-image {
+        height: 32rem;
+        object-fit: cover;
+    }
+
     .sticky-gallery-shell {
         align-items: start;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -783,5 +812,20 @@ summary::-webkit-details-marker {
 
     .sticky-gallery-feature {
         min-height: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-hero-content {
+        padding-bottom: 7rem;
+    }
+
+    .home-hero-scroll-indicator {
+        bottom: 1.5rem;
+    }
+
+    .home-hero-scroll-indicator .gallery-scroll-indicator {
+        transform: scale(0.9);
+        transform-origin: center bottom;
     }
 }
