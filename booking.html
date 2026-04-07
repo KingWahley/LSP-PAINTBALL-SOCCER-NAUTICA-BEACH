@@ -121,8 +121,10 @@
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <article class="bg-[#171717] border border-white/5 rounded-3xl p-10 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
+                    <p class="pricing-mobile-hint">Swipe sideways to compare plans.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pricing-rail pricing-rail--soccer">
+                        <article class="pricing-card bg-[#171717] border border-white/5 rounded-3xl p-10 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 01</span>
                                 <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
@@ -150,7 +152,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-10 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
+                        <article class="pricing-card bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-10 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
                             <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Best Value</div>
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 02</span>
@@ -189,8 +191,22 @@
                         <h2 class="font-anton text-5xl md:text-6xl uppercase">All Day Individual <span class="text-primary-red">Paintball Packages</span></h2>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                    <div class="pricing-carousel pricing-carousel--individual" data-pricing-carousel>
+                        <div class="pricing-carousel__top">
+                            <p class="pricing-mobile-hint pricing-mobile-hint--center pricing-mobile-hint--inline">Swipe sideways or use the arrows to explore every package.</p>
+                            <div class="pricing-carousel__controls" aria-label="Individual package controls">
+                                <button class="pricing-carousel__button" type="button" data-carousel-prev aria-label="Show previous packages">
+                                    <iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon>
+                                </button>
+                                <button class="pricing-carousel__button" type="button" data-carousel-next aria-label="Show next packages">
+                                    <iconify-icon icon="lucide:arrow-right" aria-hidden="true"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="pricing-carousel__viewport">
+                            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 pricing-rail pricing-rail--individual" data-carousel-track>
+                                <article class="pricing-card bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Bronze Package</span>
                                 <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Starter</span>
@@ -213,7 +229,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                                <article class="pricing-card bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Silver Package</span>
                                 <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Popular</span>
@@ -236,7 +252,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
+                                <article class="pricing-card bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
                             <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Most Popular</div>
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Gold Package</span>
@@ -260,7 +276,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                                <article class="pricing-card bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
                             <div class="flex items-center justify-between gap-4 mb-6">
                                 <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Platinium Package</span>
                                 <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Premium</span>
@@ -281,7 +297,9 @@
                                 <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%20Platinium%20Package." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
                                 <a href="rules-and-safety.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Rules/Regulations</a>
                             </div>
-                        </article>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -299,8 +317,10 @@
                         </div>
                     </div>
 
-                    <div class="space-y-8">
-                        <article class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
+                    <p class="pricing-mobile-hint">Swipe sideways to compare group packages.</p>
+
+                    <div class="space-y-8 pricing-rail pricing-rail--group">
+                        <article class="pricing-card bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
                             <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
                                 <div>
                                     <div class="flex items-center justify-between gap-4 mb-5">
@@ -329,7 +349,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#1A1A1A] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 lg:p-10 shadow-[0_20px_60px_rgba(63,81,33,0.16)] relative overflow-hidden">
+                        <article class="pricing-card bg-[#1A1A1A] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 lg:p-10 shadow-[0_20px_60px_rgba(63,81,33,0.16)] relative overflow-hidden">
                             <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Most Booked</div>
                             <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
                                 <div>
@@ -359,7 +379,7 @@
                             </div>
                         </article>
 
-                        <article class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
+                        <article class="pricing-card bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
                             <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
                                 <div>
                                     <div class="flex items-center justify-between gap-4 mb-5">
@@ -398,18 +418,18 @@
                 </div>
 
                 <div class="relative z-10 container mx-auto px-6 text-center">
-                    <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">READY TO LOCK IN YOUR SESSION?</h2>
+                    <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">Ready to Play?</h2>
                     <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
-                        Send your preferred package and date, and our team will help you finish the booking.
+                        Book your session today and experience the thrill.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <a href="contact.html" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
-                            Contact the Team
+                        <a href="booking.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
+                            Book Now
                         </a>
-                        <a href="https://wa.me/2349048888466" class="flex items-center gap-3 text-white">
+                        <div class="flex items-center gap-3 text-white">
                             <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
                             <span class="text-xl font-bold">09048888466</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -479,6 +499,66 @@
             window.addEventListener('scroll', updateHeaderScrollState, {
                 passive: true
             });
+        }());
+    </script>
+    <script>
+        (function () {
+            var carousels = document.querySelectorAll('[data-pricing-carousel]');
+
+            function setupCarousel(carousel) {
+                var track = carousel.querySelector('[data-carousel-track]');
+                var previousButton = carousel.querySelector('[data-carousel-prev]');
+                var nextButton = carousel.querySelector('[data-carousel-next]');
+
+                if (!track || !previousButton || !nextButton) {
+                    return;
+                }
+
+                function getScrollStep() {
+                    var firstCard = track.querySelector('.pricing-card');
+
+                    if (!firstCard) {
+                        return track.clientWidth;
+                    }
+
+                    var computedStyle = window.getComputedStyle(track);
+                    var gap = parseFloat(computedStyle.columnGap || computedStyle.gap || '0');
+
+                    return firstCard.getBoundingClientRect().width + gap;
+                }
+
+                function updateButtons() {
+                    var maxScrollLeft = track.scrollWidth - track.clientWidth;
+                    var currentScrollLeft = track.scrollLeft;
+                    var threshold = 8;
+
+                    previousButton.disabled = currentScrollLeft <= threshold;
+                    nextButton.disabled = currentScrollLeft >= maxScrollLeft - threshold;
+                }
+
+                previousButton.addEventListener('click', function () {
+                    track.scrollBy({
+                        left: -getScrollStep(),
+                        behavior: 'smooth'
+                    });
+                });
+
+                nextButton.addEventListener('click', function () {
+                    track.scrollBy({
+                        left: getScrollStep(),
+                        behavior: 'smooth'
+                    });
+                });
+
+                track.addEventListener('scroll', updateButtons, {
+                    passive: true
+                });
+
+                window.addEventListener('resize', updateButtons);
+                updateButtons();
+            }
+
+            carousels.forEach(setupCarousel);
         }());
     </script>
     <script src="scripts/mobile-nav.js"></script>
