@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     var mobileButton = document.getElementById('mobile-menu-button');
 
     if (!mobileButton) {
@@ -49,7 +49,7 @@
         '          <iconify-icon icon="lucide:x"></iconify-icon>' +
         '        </button>' +
         '      </div>' +
-        '      <a href="contact.html" class="mobile-curved-nav__book">Book Session</a>' +
+        '      <a href="booking.html" class="mobile-curved-nav__book">Book Session</a>' +
         '    </div>' +
         '    <nav class="mobile-curved-nav__links"></nav>' +
         '    <div class="mobile-curved-nav__footer"></div>' +
@@ -170,3 +170,4 @@
 
     setButtonIcon(false);
 }());
+

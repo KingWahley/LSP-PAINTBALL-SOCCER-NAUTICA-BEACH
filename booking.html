@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | LSP Paintball & Soccer Lagos</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="index.html" id="header-logo-link" class="flex items-center space-x-2">
+                    <img src="assets/images/logo.png" alt="LSP Logo" class="h-12 w-auto brightness-110">
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="index.html" id="header-home-link" class="hover:text-primary-red transition-colors">Home</a>
+                    <a href="about.html" id="header-about-link" class="hover:text-primary-red transition-colors">About</a>
+                    <a href="rules-and-safety.html" id="header-rules-link" class="hover:text-primary-red transition-colors">Rules</a>
+                    <a href="gallery.html" id="header-gallery-link" class="hover:text-primary-red transition-colors">Gallery</a>
+                    <a href="frequently-asked-questions.html" id="header-faq-link" class="hover:text-primary-red transition-colors">FAQs</a>
+                    <a href="testimonials.html" id="header-testimonials-link" class="hover:text-primary-red transition-colors">Testimonials</a>
+                    <a href="contact.html" id="header-contact-link" class="hover:text-primary-red transition-colors">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <a href="booking.html" id="header-book-button" class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase">
+                        Book Session
+                    </a>
+                    <button class="lg:hidden text-white text-3xl" id="mobile-menu-button" type="button">
+                        <iconify-icon icon="lucide:menu"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <section class="hero-header pt-48 pb-24 text-center px-6">
+                <div class="max-w-5xl mx-auto">
+                    <span class="text-primary-red font-bold tracking-[0.4em] uppercase text-sm mb-4 block">Book Now</span>
+                    <h1 class="font-anton text-6xl md:text-8xl mb-6">Packages, Pricing <span class="text-primary-red">& Booking</span></h1>
+                    <p class="text-white/60 text-lg md:text-xl max-w-3xl mx-auto">
+                        Choose your session, lock in your crew, and get ready for a full day of paintball pressure or beach soccer energy at Nautica Beach.
+                    </p>
+                    <div class="gallery-scroll-indicator mx-auto" aria-hidden="true">
+                        <span class="gallery-scroll-indicator__mouse">
+                            <span class="gallery-scroll-indicator__wheel"></span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-[#0A0A0A] paint-splatter-bg">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Booking Steps</span>
+                        <h2 class="font-anton text-5xl md:text-6xl uppercase">How To <span class="text-primary-red">Book</span></h2>
+                    </div>
+
+                    <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+                        <div class="hidden md:block absolute left-[20%] right-[20%] top-12 h-20 pointer-events-none">
+                            <svg viewBox="0 0 1000 140" class="w-full h-full" aria-hidden="true">
+                                <path d="M0 40 C110 0 190 0 300 40 S490 80 600 40 S790 0 1000 40" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 10"></path>
+                                <path d="M974 30 L1000 40 L974 50" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+
+                        <div class="relative z-10 text-center max-w-sm mx-auto">
+                            <div class="mx-auto w-24 h-24 rounded-[1.75rem] bg-gradient-to-b from-white to-[#ececec] shadow-[0_20px_50px_rgba(0,0,0,0.25)] flex items-center justify-center mb-8">
+                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.16)] flex items-center justify-center border border-[rgba(85,107,47,0.28)]">
+                                    <iconify-icon icon="lucide:crosshair" class="text-2xl text-white"></iconify-icon>
+                                </div>
+                            </div>
+                            <h3 class="font-anton text-2xl mb-3 uppercase">Choose Your Experience</h3>
+                            <p class="text-white/60 leading-relaxed">
+                                Pick between beach soccer, individual paintball packages, or group paintball bookings depending on your crew size and energy.
+                            </p>
+                        </div>
+
+                        <div class="relative z-10 text-center max-w-sm mx-auto">
+                            <div class="mx-auto w-24 h-24 rounded-[1.75rem] bg-gradient-to-b from-white to-[#ececec] shadow-[0_20px_50px_rgba(0,0,0,0.25)] flex items-center justify-center mb-8">
+                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.16)] flex items-center justify-center border border-[rgba(85,107,47,0.28)]">
+                                    <iconify-icon icon="lucide:clipboard-list" class="text-2xl text-white"></iconify-icon>
+                                </div>
+                            </div>
+                            <h3 class="font-anton text-2xl mb-3 uppercase">Confirm Your Package</h3>
+                            <p class="text-white/60 leading-relaxed">
+                                Review pellet count, player capacity, and your advance payment option so you know exactly what your day at LSP includes.
+                            </p>
+                        </div>
+
+                        <div class="relative z-10 text-center max-w-sm mx-auto">
+                            <div class="mx-auto w-24 h-24 rounded-[1.75rem] bg-gradient-to-b from-white to-[#ececec] shadow-[0_20px_50px_rgba(0,0,0,0.25)] flex items-center justify-center mb-8">
+                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.16)] flex items-center justify-center border border-[rgba(85,107,47,0.28)]">
+                                    <iconify-icon icon="mdi:wallet-outline" class="text-2xl text-white"></iconify-icon>
+                                </div>
+                            </div>
+                            <h3 class="font-anton text-2xl mb-3 uppercase">Reach Out and Lock It In</h3>
+                            <p class="text-white/60 leading-relaxed">
+                                Send your preferred package, date, and group size through WhatsApp or our contact page so the team can confirm your booking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-[#111111]">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+                        <div>
+                            <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Beach Soccer</span>
+                            <h2 class="font-anton text-5xl md:text-6xl uppercase">Soccer Pricing</h2>
+                        </div>
+                        <p class="text-white/50 max-w-xl">
+                            Straightforward pricing for teams that want to book the pitch and keep the day moving.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <article class="bg-[#171717] border border-white/5 rounded-3xl p-10 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 01</span>
+                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
+                                    <iconify-icon icon="lucide:soccer" class="text-2xl text-primary-red"></iconify-icon>
+                                </div>
+                            </div>
+                            <h3 class="font-anton text-4xl mb-2">1 Hour</h3>
+                            <div class="flex items-end gap-2 mb-5">
+                                <p class="text-5xl font-anton text-primary-red leading-none">&#8358;75,000</p>
+                                <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
+                            </div>
+                            <p class="text-white/60 mb-8">A sharp one-hour booking for quick matches, training runs, and compact group sessions.</p>
+                            <ul class="space-y-3 text-sm text-white/70 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Fast session for shorter bookings</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Great for compact groups and quick competition</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best when you want to get in, play hard, and keep moving</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%201%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                    Make Payment
+                                </a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                    Rules/Regulations
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-10 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
+                            <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Best Value</div>
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 02</span>
+                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
+                                    <iconify-icon icon="lucide:trophy" class="text-2xl text-primary-red"></iconify-icon>
+                                </div>
+                            </div>
+                            <h3 class="font-anton text-4xl mb-2">2 Hours</h3>
+                            <div class="flex items-end gap-2 mb-5">
+                                <p class="text-5xl font-anton text-primary-red leading-none">&#8358;130,000</p>
+                                <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
+                            </div>
+                            <p class="text-white/60 mb-8">Best for longer competition, bigger groups, and teams that want enough time to settle into the game.</p>
+                            <ul class="space-y-3 text-sm text-white/70 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>More time for full match rhythm and rotations</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Ideal for larger crews and competitive sessions</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best overall value for beach soccer bookings</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%202%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                    Make Payment
+                                </a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                    Rules/Regulations
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-[#0A0A0A] paint-splatter-bg">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Our Packages</span>
+                        <h2 class="font-anton text-5xl md:text-6xl uppercase">All Day Individual <span class="text-primary-red">Paintball Packages</span></h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Bronze Package</span>
+                                <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Starter</span>
+                            </div>
+                            <h3 class="font-anton text-4xl">&#8358;11,000</h3>
+                            <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Per Player</p>
+                            <div class="mt-6 rounded-2xl bg-white/5 border border-white/5 px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.24em] text-white/35 font-bold mb-2">Advance Online Price</p>
+                                <p class="font-anton text-2xl text-white">&#8358;10,500</p>
+                            </div>
+                            <ul class="space-y-3 text-sm text-white/70 mt-8 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>25 Paintball Pellets</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals, Face Mask, Body Armour, Paintball Overalls</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%20Bronze%20Package." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Rules/Regulations</a>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Silver Package</span>
+                                <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Popular</span>
+                            </div>
+                            <h3 class="font-anton text-4xl">&#8358;12,000</h3>
+                            <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Per Player</p>
+                            <div class="mt-6 rounded-2xl bg-white/5 border border-white/5 px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.24em] text-white/35 font-bold mb-2">Advance Online Price</p>
+                                <p class="font-anton text-2xl text-white">&#8358;11,500</p>
+                            </div>
+                            <ul class="space-y-3 text-sm text-white/70 mt-8 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>50 Paintball Pellets</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals, Face Mask, Body Armour, Paintball Overalls</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%20Silver%20Package." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Rules/Regulations</a>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
+                            <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Most Popular</div>
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Gold Package</span>
+                                
+                            </div>
+                            <h3 class="font-anton text-4xl">&#8358;24,000</h3>
+                            <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Per Player</p>
+                            <div class="mt-6 rounded-2xl bg-[rgba(85,107,47,0.12)] border border-[rgba(85,107,47,0.22)] px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.24em] text-white/35 font-bold mb-2">Advance Online Price</p>
+                                <p class="font-anton text-2xl text-white">&#8358;22,500</p>
+                            </div>
+                            <ul class="space-y-3 text-sm text-white/70 mt-8 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>250 Paintball Pellets</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals, Face Mask, Body Armour, Paintball Overalls</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%20Gold%20Package." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Rules/Regulations</a>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
+                            <div class="flex items-center justify-between gap-4 mb-6">
+                                <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Platinium Package</span>
+                                <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Premium</span>
+                            </div>
+                            <h3 class="font-anton text-4xl">&#8358;64,000</h3>
+                            <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Per Player</p>
+                            <div class="mt-6 rounded-2xl bg-white/5 border border-white/5 px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.24em] text-white/35 font-bold mb-2">Advance Online Price</p>
+                                <p class="font-anton text-2xl text-white">&#8358;61,500</p>
+                            </div>
+                            <ul class="space-y-3 text-sm text-white/70 mt-8 mb-10">
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>1000 Paintball Pellets</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals, Face Mask, Body Armour, Paintball Overalls</span></li>
+                            </ul>
+                            <div class="mt-auto flex flex-col gap-3">
+                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%20Platinium%20Package." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                <a href="rules-and-safety.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Rules/Regulations</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-[#111111]">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+                        <div>
+                            <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Group Packages</span>
+                            <h2 class="font-anton text-5xl md:text-6xl uppercase">Paintball Group <span class="text-primary-red">Bookings</span></h2>
+                        </div>
+                        <div class="max-w-2xl">
+                            <p class="text-white/70 font-bold uppercase tracking-[0.18em] text-xs mb-3">Important Note</p>
+                            <p class="text-white/50">Prices are not inclusive of VAT and beach entrance fee. Group bookings are not private bookings.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <article class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
+                            <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
+                                <div>
+                                    <div class="flex items-center justify-between gap-4 mb-5">
+                                        <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Group Package 1</span>
+                                        <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Up to 10</span>
+                                    </div>
+                                    <h3 class="font-anton text-4xl mt-4">&#8358;115,000</h3>
+                                    <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Flat Rate</p>
+                                    <p class="text-white/70 mt-6">Number of players: 10</p>
+                                    <div class="mt-8 flex flex-col gap-3">
+                                        <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20Group%20Package%201." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                        <a href="contact.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Need Help?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-anton text-2xl mb-4">Includes</h4>
+                                    <ul class="grid md:grid-cols-2 gap-3 text-sm text-white/70">
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Admission for up to 10 players</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>500 Paintball Pellets for group</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker per player</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day per player</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals: Face Mask, Body Armour, Paintball Overalls</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:plus-circle" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Additional players above 10 incur &#8358;11,500 each</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#1A1A1A] border border-[rgba(85,107,47,0.24)] rounded-3xl p-8 lg:p-10 shadow-[0_20px_60px_rgba(63,81,33,0.16)] relative overflow-hidden">
+                            <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Most Booked</div>
+                            <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
+                                <div>
+                                    <div class="flex items-center justify-between gap-4 mb-5">
+                                        <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Group Package 2</span>
+                                        <span class="inline-flex items-center rounded-full bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/60 font-bold">Up to 20</span>
+                                    </div>
+                                    <h3 class="font-anton text-4xl mt-4">&#8358;230,000</h3>
+                                    <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Flat Rate</p>
+                                    <p class="text-white/70 mt-6">Number of players: 20</p>
+                                    <div class="mt-8 flex flex-col gap-3">
+                                        <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20Group%20Package%202." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                        <a href="contact.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Need Help?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-anton text-2xl mb-4">Includes</h4>
+                                    <ul class="grid md:grid-cols-2 gap-3 text-sm text-white/70">
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Admission for up to 20 players</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>1000 Paintball Pellets for group</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker per group</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day per players</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals: Face Mask, Body Armour, Paintball Overalls</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:plus-circle" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Additional players above 20 incur &#8358;11,250 each</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">
+                            <div class="grid lg:grid-cols-[1.1fr,1.9fr] gap-8">
+                                <div>
+                                    <div class="flex items-center justify-between gap-4 mb-5">
+                                        <span class="text-xs uppercase tracking-[0.3em] text-primary-red font-bold">Group Package 3</span>
+                                        <span class="inline-flex items-center rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/40 font-bold">Up to 30</span>
+                                    </div>
+                                    <h3 class="font-anton text-4xl mt-4">&#8358;345,000</h3>
+                                    <p class="text-white/50 text-sm uppercase tracking-widest mt-2">Flat Rate</p>
+                                    <p class="text-white/70 mt-6">Number of players: 30</p>
+                                    <div class="mt-8 flex flex-col gap-3">
+                                        <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20Group%20Package%203." class="primary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Make Payment</a>
+                                        <a href="contact.html" class="secondary-button text-center px-6 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">Need Help?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-anton text-2xl mb-4">Includes</h4>
+                                    <ul class="grid md:grid-cols-2 gap-3 text-sm text-white/70">
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Admission for up to 30 players</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>1500 Paintball Pellets for group</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Emek Marker per player</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Air All Day per player</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Free Rentals: Face Mask, Body Armour, Paintball Overalls</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:plus-circle" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Additional players above 10 incur &#8358;11,000 each</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 relative overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+                    <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                </div>
+
+                <div class="relative z-10 container mx-auto px-6 text-center">
+                    <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">READY TO LOCK IN YOUR SESSION?</h2>
+                    <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
+                        Send your preferred package and date, and our team will help you finish the booking.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <a href="contact.html" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
+                            Contact the Team
+                        </a>
+                        <a href="https://wa.me/2349048888466" class="flex items-center gap-3 text-white">
+                            <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+                            <span class="text-xl font-bold">09048888466</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <div>
+                        <img src="assets/images/logo.png" alt="LSP Logo" class="h-16 mb-8">
+                        <p class="text-white/50 text-sm leading-relaxed">
+                            Lagos' premier speedball and beach soccer arena. Action-packed fun for the whole family at Nautica Beach.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Get In Touch</h4>
+                        <ul class="space-y-4 text-sm text-white/70">
+                            <li class="flex items-start">
+                                <iconify-icon icon="lucide:map-pin" class="mr-3 text-primary-red mt-1"></iconify-icon>
+                                Nautica Beach Resort, Elegushi, Ikate, Lekki
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:phone" class="mr-3 text-primary-red"></iconify-icon>
+                                09048888466
+                            </li>
+                            <li class="flex items-center">
+                                <iconify-icon icon="lucide:mail" class="mr-3 text-primary-red"></iconify-icon>
+                                lspparknautica@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Quick Links</h4>
+                        <ul class="space-y-3 text-sm text-white/70">
+                            <li><a href="booking.html" class="hover:text-primary-red transition-colors">Booking Page</a></li>
+                            <li><a href="rules-and-safety.html" class="hover:text-primary-red transition-colors">Arena Rules</a></li>
+                            <li><a href="waiver.html" class="hover:text-primary-red transition-colors">Sign Waiver</a></li>
+                            <li><a href="contact.html" class="hover:text-primary-red transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Follow Action</h4>
+                        <div class="flex space-x-4 mb-8">
+                            <a href="https://instagram.com/nauticabeachpaintball" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+                            </a>
+                            <a href="https://tiktok.com/@nauticabeachpaintball" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
+                                <iconify-icon icon="simple-icons:tiktok" class="text-xl"></iconify-icon>
+                            </a>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-white/30 font-bold">@nauticabeachpaintball</p>
+                    </div>
+                </div>
+                <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
+                    <p>© 2026 LSP PAINTBALL & SOCCER. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            function updateHeaderScrollState() {
+                document.body.classList.toggle('nav-scrolled', window.scrollY > 8);
+            }
+
+            updateHeaderScrollState();
+            window.addEventListener('scroll', updateHeaderScrollState, {
+                passive: true
+            });
+        }());
+    </script>
+    <script src="scripts/mobile-nav.js"></script>
+</body>
+</html>
