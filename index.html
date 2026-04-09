@@ -211,7 +211,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card 1: Paintball -->
-            <div class="feature-card p-8 rounded-2xl group">
+            <div class="feature-card feature-card--media feature-card--paintball p-8 rounded-2xl group">
               <div
                 class="w-16 h-16 bg-[#ec1c25]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#ec1c25] transition-colors duration-300"
               >
@@ -225,14 +225,16 @@
               >
                 Paintball Battles
               </h6>
-              <p class="text-sm text-muted leading-relaxed">
-                High-stakes speedball and tactical maneuvers. Gear up with Emek
-                Markers and full body armor.
-              </p>
+              <a
+                href="booking.html"
+                class="feature-card-button inline-flex items-center justify-center rounded-full px-6 py-3 uppercase text-xs font-bold tracking-[0.24em]"
+              >
+                Book Session
+              </a>
             </div>
 
             <!-- Card 2: Soccer -->
-            <div class="feature-card p-8 rounded-2xl group">
+            <div class="feature-card feature-card--media feature-card--soccer p-8 rounded-2xl group">
               <div
                 class="w-16 h-16 bg-[#234923]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#234923] transition-colors duration-300"
               >
@@ -246,14 +248,16 @@
               >
                 Soccer Sessions
               </h6>
-              <p class="text-sm text-muted leading-relaxed">
-                Fast-paced mini-soccer tournaments on our premium beachside
-                pitches. Perfect for groups.
-              </p>
+              <a
+                href="booking.html"
+                class="feature-card-button inline-flex items-center justify-center rounded-full px-6 py-3 uppercase text-xs font-bold tracking-[0.24em]"
+              >
+                Book Session
+              </a>
             </div>
 
             <!-- Card 3: Group Activities -->
-            <div class="feature-card p-8 rounded-2xl group">
+            <div class="feature-card feature-card--media feature-card--group p-8 rounded-2xl group">
               <div
                 class="w-16 h-16 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white/10 transition-colors duration-300"
               >
@@ -263,14 +267,16 @@
                 ></iconify-icon>
               </div>
               <h6 class="feature-card-title mb-4">Group Activities</h6>
-              <p class="text-sm text-muted leading-relaxed">
-                Custom tailored events for parties, birthdays, and social
-                hangouts under the sun.
-              </p>
+              <a
+                href="booking.html"
+                class="feature-card-button inline-flex items-center justify-center rounded-full px-6 py-3 uppercase text-xs font-bold tracking-[0.24em]"
+              >
+                Book Session
+              </a>
             </div>
 
             <!-- Card 4: Team Bonding -->
-            <div class="feature-card p-8 rounded-2xl group">
+            <div class="feature-card feature-card--media feature-card--bonding p-8 rounded-2xl group">
               <div
                 class="w-16 h-16 bg-[#cc3366]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#cc3366] transition-colors duration-300"
               >
@@ -284,10 +290,110 @@
               >
                 Team Bonding
               </h6>
-              <p class="text-sm text-muted leading-relaxed">
-                Strategic corporate training designed to build communication,
-                leadership, and trust.
+              <a
+                href="booking.html"
+                class="feature-card-button inline-flex items-center justify-center rounded-full px-6 py-3 uppercase text-xs font-bold tracking-[0.24em]"
+              >
+                Book Session
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="home-reviews-section py-24 bg-[#050505]">
+        <div class="container mx-auto px-6">
+          <div class="home-reviews-grid">
+            <div class="home-reviews-summary">
+              <span class="home-reviews-kicker">Our Reviews</span>
+              <div class="home-reviews-stars" aria-label="4.8 out of 5 stars">
+                <iconify-icon icon="mdi:star" class="is-filled"></iconify-icon>
+                <iconify-icon icon="mdi:star" class="is-filled"></iconify-icon>
+                <iconify-icon icon="mdi:star" class="is-filled"></iconify-icon>
+                <iconify-icon icon="mdi:star" class="is-filled"></iconify-icon>
+                <span class="home-reviews-star-split" aria-hidden="true">
+                  <iconify-icon icon="mdi:star" class="is-filled"></iconify-icon>
+                  <iconify-icon icon="mdi:star" class="is-muted"></iconify-icon>
+                </span>
+              </div>
+              <p class="home-reviews-meta">
+                Based on 600+ happy guests across Lagos birthdays, hangouts, team outings, and weekend bookings.
               </p>
+            </div>
+
+            <div class="home-reviews-viewport" data-reviews-marquee>
+              <div class="home-reviews-list" data-reviews-track>
+                <article class="home-review-card">
+                  <div class="home-review-card__stars" aria-hidden="true">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                  </div>
+                  <p class="home-review-card__body">
+                    We came from Lekki for my younger brother's birthday and everything was well organized. The staff were sharp, the safety briefing was clear, and the boys really enjoyed the paintball.
+                  </p>
+                  <p class="home-review-card__author">Amaka O., Ajah</p>
+                </article>
+
+                <article class="home-review-card">
+                  <div class="home-review-card__stars" aria-hidden="true">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                  </div>
+                  <p class="home-review-card__body">
+                    We booked for team bonding and I was impressed by how coordinated the day was. No confusion, no wasted time, and the instructors were patient from start to finish.
+                  </p>
+                  <p class="home-review-card__author">Tunde A., Victoria Island</p>
+                </article>
+
+                <article class="home-review-card">
+                  <div class="home-review-card__stars" aria-hidden="true">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                  </div>
+                  <p class="home-review-card__body">
+                    My friends and I did both soccer and paintball and had a really good time. The arena felt safe, the gear was in good condition, and the coordinators kept the energy up all through.
+                  </p>
+                  <p class="home-review-card__author">Bola E., Surulere</p>
+                </article>
+
+                <article class="home-review-card">
+                  <div class="home-review-card__stars" aria-hidden="true">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                  </div>
+                  <p class="home-review-card__body">
+                    I came with my cousins from Yaba and the whole experience felt smooth. We started on time, the staff were respectful, and the games were genuinely fun.
+                  </p>
+                  <p class="home-review-card__author">Korede M., Yaba</p>
+                </article>
+
+                <article class="home-review-card">
+                  <div class="home-review-card__stars" aria-hidden="true">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                  </div>
+                  <p class="home-review-card__body">
+                    We used LSP for a small church youth hangout and it worked out well. The coordinators were patient with everyone and the atmosphere stayed lively all day.
+                  </p>
+                  <p class="home-review-card__author">Deborah A., Ikeja</p>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -454,6 +560,56 @@
         updateHeaderScrollState();
         window.addEventListener("scroll", updateHeaderScrollState, {
           passive: true,
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        var marquee = document.querySelector("[data-reviews-marquee]");
+        var track = document.querySelector("[data-reviews-track]");
+
+        if (!marquee || !track) {
+          return;
+        }
+
+        track.innerHTML += track.innerHTML;
+
+        var animationFrameId = 0;
+        var scrollSpeed = 0.45;
+        var paused = false;
+
+        function tick() {
+          if (!paused) {
+            marquee.scrollLeft += scrollSpeed;
+
+            if (marquee.scrollLeft >= track.scrollWidth / 2) {
+              marquee.scrollLeft = 0;
+            }
+          }
+
+          animationFrameId = window.requestAnimationFrame(tick);
+        }
+
+        marquee.addEventListener("mouseenter", function () {
+          paused = true;
+        });
+
+        marquee.addEventListener("mouseleave", function () {
+          paused = false;
+        });
+
+        marquee.addEventListener("touchstart", function () {
+          paused = true;
+        }, { passive: true });
+
+        marquee.addEventListener("touchend", function () {
+          paused = false;
+        }, { passive: true });
+
+        animationFrameId = window.requestAnimationFrame(tick);
+
+        window.addEventListener("beforeunload", function () {
+          window.cancelAnimationFrame(animationFrameId);
         });
       })();
     </script>
