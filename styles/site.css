@@ -1129,25 +1129,6 @@ summary::-webkit-details-marker {
     transform: scale(1.03);
 }
 
-.sticky-gallery-meta {
-    align-items: end;
-    background: linear-gradient(180deg, transparent 10%, rgb(var(--color-bg-dark-rgb) / 0.85) 100%);
-    display: flex;
-    inset: 0;
-    padding: 1.25rem;
-    position: absolute;
-}
-
-.sticky-gallery-tag {
-    color: var(--color-brand-accent);
-    display: block;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    margin-bottom: 0.45rem;
-    text-transform: uppercase;
-}
-
 .sticky-gallery-center {
     display: grid;
     gap: 1rem;
