@@ -9,7 +9,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=block" rel="stylesheet">
     <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
@@ -425,26 +425,37 @@
 
             <section class="py-24 relative overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
-                    <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                  <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+                  <div
+                    class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+                  ></div>
                 </div>
-
+        
                 <div class="relative z-10 container mx-auto px-6 text-center">
-                    <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">Ready to Play?</h2>
-                    <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
-                        Book your session today and experience the thrill.
-                    </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <a href="booking.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
-                            Book Now
-                        </a>
-                        <div class="flex items-center gap-3 text-white">
-                            <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-                            <span class="text-xl font-bold">09048888466</span>
-                        </div>
-                    </div>
+                  <h2 class="section-title text-white mb-6 tracking-tighter">
+                    Ready to Play?
+                  </h2>
+                  <p
+                    class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest"
+                  >
+                    Book your session today and experience the thrill.
+                  </p>
+                  <div
+                    class="flex flex-col sm:flex-row items-center justify-center gap-6"
+                  >
+                    <a
+                      href="booking.html"
+                      id="final-book-button"
+                      class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1"
+                    >
+                      Book Now
+                    </a>
+                    <a href="https://wa.me/2349048888466?text=Hello%20I%20want%20to%20book%20a%20session" class="flex px-10 cursor-pointer py-4 rounded-md items-center gap-3 text-white border-2 border-white">              <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+                      <span class="text-xl font-bold">09048888466</span>
+                    </a>
+                  </div>
                 </div>
-            </section>
+              </section>
         </main>
 
         <footer class="bg-[#111111] py-16 border-t border-white/5">
