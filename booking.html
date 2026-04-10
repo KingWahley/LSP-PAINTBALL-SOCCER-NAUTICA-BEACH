@@ -112,7 +112,7 @@
                 <div class="max-w-7xl mx-auto px-6">
                     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
                         <div>
-                            <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Beach Soccer</span>
+                            <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Soccer Packages</span>
                             <h2 class="font-anton text-5xl md:text-6xl uppercase">Soccer Pricing</h2>
                         </div>
                         <p class="text-white/50 max-w-xl">
@@ -120,79 +120,93 @@
                         </p>
                     </div>
 
-                    <p class="pricing-mobile-hint">Swipe sideways to compare plans.</p>
+                    <div class="pricing-carousel pricing-carousel--soccer" data-pricing-carousel>
+                        <div class="pricing-carousel__top">
+                            
+                            <div class="pricing-carousel__controls md:hidden" aria-label="Beach soccer pricing controls">
+                                <button class="pricing-carousel__button" type="button" data-carousel-prev aria-label="Show previous soccer plan">
+                                    <iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon>
+                                </button>
+                                <button class="pricing-carousel__button" type="button" data-carousel-next aria-label="Show next soccer plan">
+                                    <iconify-icon icon="lucide:arrow-right" aria-hidden="true"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pricing-rail pricing-rail--soccer">
-                        <article class="pricing-card bg-[#171717] border border-white/5 rounded-3xl p-10 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
-                            <div class="flex items-center justify-between gap-4 mb-6">
-                                <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 01</span>
-                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
-                                    <iconify-icon icon="lucide:soccer" class="text-2xl text-primary-red"></iconify-icon>
-                                </div>
-                            </div>
-                            <h3 class="font-anton text-4xl mb-2">1 Hour</h3>
-                            <div class="flex items-end gap-2 mb-5">
-                                <p class="text-5xl font-anton text-primary-red leading-none">&#8358;75,000</p>
-                                <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
-                            </div>
-                            <p class="text-white/60 mb-8">A sharp one-hour booking for quick matches, training runs, and compact group sessions.</p>
-                            <ul class="space-y-3 text-sm text-white/70 mb-10">
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Fast session for shorter bookings</span></li>
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Great for compact groups and quick competition</span></li>
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best when you want to get in, play hard, and keep moving</span></li>
-                            </ul>
-                            <div class="mt-auto flex flex-col gap-3">
-                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%201%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
-                                    Make Payment
-                                </a>
-                                <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
-                                    Rules/Regulations
-                                </a>
-                            </div>
-                        </article>
+                        <div class="pricing-carousel__viewport">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pricing-rail pricing-rail--soccer" data-carousel-track>
+                                <article class="pricing-card bg-[#171717] border border-white/5 rounded-3xl p-10 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
+                                    <div class="flex items-center justify-between gap-4 mb-6">
+                                        <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 01</span>
+                                        <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
+                                            <iconify-icon icon="lucide:soccer" class="text-2xl text-primary-red"></iconify-icon>
+                                        </div>
+                                    </div>
+                                    <h3 class="font-anton text-4xl mb-2">1 Hour</h3>
+                                    <div class="flex items-end gap-2 mb-5">
+                                        <p class="text-5xl font-anton text-primary-red leading-none">&#8358;75,000</p>
+                                        <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
+                                    </div>
+                                    <p class="text-white/60 mb-8">A sharp one-hour booking for quick matches, training runs, and compact group sessions.</p>
+                                    <ul class="space-y-3 text-sm text-white/70 mb-10">
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Fast session for shorter bookings</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Great for compact groups and quick competition</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best when you want to get in, play hard, and keep moving</span></li>
+                                    </ul>
+                                    <div class="mt-auto flex flex-col gap-3">
+                                        <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%201%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                            Make Payment
+                                        </a>
+                                        <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                            Rules/Regulations
+                                        </a>
+                                    </div>
+                                </article>
 
-                        <article class="pricing-card bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-10 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
-                            <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Best Value</div>
-                            <div class="flex items-center justify-between gap-4 mb-6">
-                                <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 02</span>
-                                <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
-                                    <iconify-icon icon="lucide:trophy" class="text-2xl text-primary-red"></iconify-icon>
-                                </div>
+                                <article class="pricing-card bg-[#171717] border border-[rgba(85,107,47,0.24)] rounded-3xl p-10 flex flex-col shadow-[0_25px_70px_rgba(63,81,33,0.18)] relative overflow-hidden">
+                                    <div class="absolute top-0 right-0 px-5 py-2 rounded-bl-2xl bg-primary-red text-white text-[11px] font-bold uppercase tracking-[0.24em]">Best Value</div>
+                                    <div class="flex items-center justify-between gap-4 mb-6">
+                                        <span class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.26em] text-white/50">Session 02</span>
+                                        <div class="w-12 h-12 rounded-2xl bg-[rgba(85,107,47,0.14)] border border-[rgba(85,107,47,0.24)] flex items-center justify-center">
+                                            <iconify-icon icon="lucide:trophy" class="text-2xl text-primary-red"></iconify-icon>
+                                        </div>
+                                    </div>
+                                    <h3 class="font-anton text-4xl mb-2">2 Hours</h3>
+                                    <div class="flex items-end gap-2 mb-5">
+                                        <p class="text-5xl font-anton text-primary-red leading-none">&#8358;130,000</p>
+                                        <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
+                                    </div>
+                                    <p class="text-white/60 mb-8">Best for longer competition, bigger groups, and teams that want enough time to settle into the game.</p>
+                                    <ul class="space-y-3 text-sm text-white/70 mb-10">
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>More time for full match rhythm and rotations</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Ideal for larger crews and competitive sessions</span></li>
+                                        <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best overall value for beach soccer bookings</span></li>
+                                    </ul>
+                                    <div class="mt-auto flex flex-col gap-3">
+                                        <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%202%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                            Make Payment
+                                        </a>
+                                        <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
+                                            Rules/Regulations
+                                        </a>
+                                    </div>
+                                </article>
                             </div>
-                            <h3 class="font-anton text-4xl mb-2">2 Hours</h3>
-                            <div class="flex items-end gap-2 mb-5">
-                                <p class="text-5xl font-anton text-primary-red leading-none">&#8358;130,000</p>
-                                <span class="text-white/35 text-xs uppercase tracking-[0.24em] font-bold pb-1">Flat Rate</span>
-                            </div>
-                            <p class="text-white/60 mb-8">Best for longer competition, bigger groups, and teams that want enough time to settle into the game.</p>
-                            <ul class="space-y-3 text-sm text-white/70 mb-10">
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>More time for full match rhythm and rotations</span></li>
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Ideal for larger crews and competitive sessions</span></li>
-                                <li class="flex items-start gap-3"><iconify-icon icon="lucide:check-circle-2" class="text-primary-red text-lg mt-0.5"></iconify-icon><span>Best overall value for beach soccer bookings</span></li>
-                            </ul>
-                            <div class="mt-auto flex flex-col gap-3">
-                                <a href="https://wa.me/2349048888466?text=Hello%20LSP,%20I%20want%20to%20make%20payment%20for%20the%202%20Hour%20Soccer%20booking." class="primary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
-                                    Make Payment
-                                </a>
-                                <a href="rules-and-safety.html" class="secondary-button text-center px-8 py-4 rounded-2xl uppercase text-sm font-bold tracking-wider">
-                                    Rules/Regulations
-                                </a>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="py-24 bg-[#0A0A0A] paint-splatter-bg">
                 <div class="max-w-7xl mx-auto px-6">
-                    <div class="text-center mb-16">
-                        <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Our Packages</span>
+                    <div class="text-left mb-16">
+                        <span class="text-primary-red font-bold tracking-[0.35em] uppercase text-xs mb-4 block">Paintball Packages</span>
                         <h2 class="font-anton text-5xl md:text-6xl uppercase">All Day Individual <span class="text-primary-red">Paintball Packages</span></h2>
                     </div>
 
                     <div class="pricing-carousel pricing-carousel--individual" data-pricing-carousel>
                         <div class="pricing-carousel__top">
-                            <p class="pricing-mobile-hint pricing-mobile-hint--center pricing-mobile-hint--inline">Swipe sideways or use the arrows to explore every package.</p>
+                           
                             <div class="pricing-carousel__controls" aria-label="Individual package controls">
                                 <button class="pricing-carousel__button" type="button" data-carousel-prev aria-label="Show previous packages">
                                     <iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon>
@@ -316,7 +330,6 @@
                         </div>
                     </div>
 
-                    <p class="pricing-mobile-hint">Swipe sideways to compare group packages.</p>
 
                     <div class="space-y-8 pricing-rail pricing-rail--group">
                         <article class="pricing-card bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 lg:p-10 shadow-[0_18px_55px_rgba(0,0,0,0.18)]">

@@ -1522,6 +1522,10 @@ summary::-webkit-details-marker {
         display: inline-flex;
     }
 
+    .home-intro-image {
+        display: none;
+    }
+
     .gallery-mobile-menu {
         gap: 0.4rem;
         padding-left: 0.65rem;
