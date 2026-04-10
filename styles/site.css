@@ -982,6 +982,27 @@ summary::-webkit-details-marker {
     width: 100%;
 }
 
+.gallery-mobile-menu {
+    backdrop-filter: blur(18px);
+    background: linear-gradient(180deg, rgb(var(--color-bg-dark-rgb) / 0.78) 0%, rgb(var(--color-bg-dark-alt-rgb) / 0.96) 100%);
+    border-top: 1px solid rgb(var(--color-white-rgb) / 0.08);
+    bottom: 0;
+    display: flex;
+    gap: 0.55rem;
+    left: 0;
+    padding: 0.85rem 0.9rem calc(0.85rem + env(safe-area-inset-bottom));
+    position: fixed;
+    right: 0;
+    z-index: 45;
+}
+
+.gallery-mobile-menu .gallery-section-button {
+    flex: 1 1 0;
+    font-size: 0.52rem;
+    min-width: 0;
+    padding: 0.75rem 0.5rem;
+}
+
 .gallery-section-button {
     display: block;
     background: transparent;
@@ -1152,7 +1173,11 @@ summary::-webkit-details-marker {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: auto;
     padding: 1.5rem;
+    position: sticky;
+    bottom: 1rem;
+    z-index: 3;
 }
 
 .gallery-footer-wordmark {
@@ -1283,6 +1308,10 @@ summary::-webkit-details-marker {
 }
 
 @media (min-width: 1024px) {
+    .gallery-mobile-menu {
+        display: none;
+    }
+
     .mobile-curved-nav {
         display: none;
     }
@@ -1330,10 +1359,12 @@ summary::-webkit-details-marker {
     }
 
     .sticky-gallery-center {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
         position: sticky;
         top: 6rem;
-        height: calc(100vh - 7rem);
-        grid-template-rows: repeat(3, minmax(0, 1fr));
+        min-height: calc(100vh - 7rem);
     }
 
     .sticky-gallery-feature {
@@ -1342,6 +1373,14 @@ summary::-webkit-details-marker {
 }
 
 @media (max-width: 767px) {
+    body.gallery-page {
+        padding-bottom: 5.75rem;
+    }
+
+    .sticky-gallery-note {
+        display: none;
+    }
+
     .home-reviews-summary {
         text-align: center;
     }
@@ -1460,6 +1499,14 @@ summary::-webkit-details-marker {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    body.gallery-page {
+        padding-bottom: 6rem;
+    }
+
+    .sticky-gallery-note {
+        display: none;
+    }
+
     #mobile-menu-button {
         display: inline-flex;
     }
@@ -1473,6 +1520,12 @@ summary::-webkit-details-marker {
 @media (max-width: 639px) {
     #mobile-menu-button {
         display: inline-flex;
+    }
+
+    .gallery-mobile-menu {
+        gap: 0.4rem;
+        padding-left: 0.65rem;
+        padding-right: 0.65rem;
     }
 
     .pricing-carousel__controls {
