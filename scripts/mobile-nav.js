@@ -11,7 +11,6 @@
         { href: 'rules-and-safety.html', label: 'Rules', subheading: 'Arena rules and safety guide' },
         { href: 'gallery.html', label: 'Gallery', subheading: 'Moments from the field and beach' },
         { href: 'frequently-asked-questions.html', label: 'FAQs', subheading: 'Quick answers before you book' },
-        { href: 'testimonials.html', label: 'Testimonials', subheading: 'What guests around Lagos are saying' },
         { href: 'contact.html', label: 'Contact', subheading: 'Reach us and book your session' }
     ];
 

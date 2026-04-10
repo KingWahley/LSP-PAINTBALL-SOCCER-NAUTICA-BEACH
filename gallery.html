@@ -1,605 +1,915 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | LSP Paintball & Soccer Lagos</title>
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Nautica Beach paintball and soccer Lagos</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/site.css">
-</head>
-<body class="gallery-page">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/site.css" />
+  </head>
+  <body class="gallery-page">
     <div class="min-h-screen flex flex-col">
-        <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5">
-            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-                <a href="index.html" id="header-logo-link" class="flex items-center space-x-2">
-                    <img src="assets/images/logo.png" alt="LSP Logo" class="h-12 w-auto brightness-110">
+      <header
+        class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-white/5"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        >
+          <a
+            href="index.html"
+            id="header-logo-link"
+            class="flex items-center space-x-2"
+          >
+            <img
+              src="assets/images/logo.png"
+              alt="LSP Logo"
+              class="h-12 w-auto brightness-110"
+            />
+          </a>
+          <nav
+            class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest"
+          >
+            <a
+              href="index.html"
+              id="header-home-link"
+              class="hover:text-primary-red transition-colors"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              id="header-about-link"
+              class="hover:text-primary-red transition-colors"
+              >About</a
+            >
+            <a
+              href="rules-and-safety.html"
+              id="header-rules-link"
+              class="hover:text-primary-red transition-colors"
+              >Rules</a
+            >
+            <a
+              href="gallery.html"
+              id="header-gallery-link"
+              class="text-primary-red"
+              >Gallery</a
+            >
+            <a
+              href="frequently-asked-questions.html"
+              id="header-faq-link"
+              class="hover:text-primary-red transition-colors"
+              >FAQs</a
+            >
+            <a
+              href="contact.html"
+              id="header-contact-link"
+              class="hover:text-primary-red transition-colors"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex items-center space-x-6">
+            <a
+              href="booking.html"
+              id="header-book-button"
+              class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase"
+            >
+              Book Session
+            </a>
+            <button
+              class="lg:hidden text-white text-3xl"
+              id="mobile-menu-button"
+            >
+              <iconify-icon icon="lucide:menu"></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow pt-20">
+        <section
+          class="gallery-hero-panel text-white min-h-[62vh] w-full grid place-content-center sticky top-0"
+        >
+          <div
+            class="gallery-hero-copy max-w-6xl mx-auto px-8"
+          >
+            <span
+              class="text-primary-red font-bold text-left md:text-center uppercase tracking-[0.45em] text-xs mb-6 block"
+            >
+              Nautica Beach Visual Archive
+            </span>
+            <h1
+              class="text-3xl md:text-5xl font-semibold text-left md:text-center tracking-tight leading-[120%] uppercase"
+            >
+              See the energy at
+              <br />
+              Nautica Beach paintball and soccer
+            </h1>
+            <div class="gallery-scroll-indicator" aria-hidden="true">
+              <span class="gallery-scroll-indicator__mouse">
+                <span class="gallery-scroll-indicator__wheel"></span>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="gallery-sections"
+          class="w-full bg-slate-950 text-white pb-24"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <section
+              class="gallery-panel is-loading"
+              data-gallery-panel="paintball"
+            >
+              <div class="sticky-gallery-shell">
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-left-1"
+                      alt="Players preparing for a match"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Briefing</span>
+                        <h3 class="font-anton text-2xl">Mission Starts Here</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-left-2"
+                      alt="High-energy game moment"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Paintball</span>
+                        <h3 class="font-anton text-2xl">
+                          Pressure and Precision
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-left-3"
+                      alt="Team moving through the arena"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Teamwork</span>
+                        <h3 class="font-anton text-2xl">Move as One</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-left-4"
+                      alt="Outdoor action atmosphere"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Atmosphere</span>
+                        <h3 class="font-anton text-2xl">Open-Air Adrenaline</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-left-5"
+                      alt="Friends celebrating after a game"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Group Fun</span>
+                        <h3 class="font-anton text-2xl">
+                          Victory Feels Better Together
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="sticky-gallery-center">
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="paintball-center-1"
+                      alt="Featured arena action shot"
+                    />
+                  </figure>
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="paintball-center-2"
+                      alt="Featured football gallery image"
+                    />
+                  </figure>
+                  <div class="sticky-gallery-note">
+                    <div
+                      class="gallery-section-menu"
+                      aria-label="Gallery Sections"
+                    >
+                      <button
+                        class="gallery-section-button is-active"
+                        type="button"
+                        data-gallery-target="paintball"
+                        aria-pressed="true"
+                      >
+                        Paintball Arena
+                      </button>
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="soccer"
+                        aria-pressed="false"
+                      >
+                        Beach Soccer
+                      </button>
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="groups"
+                        aria-pressed="false"
+                      >
+                        Groups & Events
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-right-1"
+                      alt="Coastal outdoor recreation scene"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Beachside</span>
+                        <h3 class="font-anton text-2xl">Lagos Energy</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-right-2"
+                      alt="Friends relaxing between activities"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Moments</span>
+                        <h3 class="font-anton text-2xl">Between the Battles</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-right-3"
+                      alt="Active lifestyle sports image"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Motion</span>
+                        <h3 class="font-anton text-2xl">Full-Speed Sessions</h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-right-4"
+                      alt="Outdoor sports environment"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Experience</span>
+                        <h3 class="font-anton text-2xl">
+                          The Day Stays With You
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="paintball-right-5"
+                      alt="Final gallery image from the experience"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Finish Strong</span>
+                        <h3 class="font-anton text-2xl">
+                          Last Shot, Last Look
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <section class="gallery-panel" data-gallery-panel="soccer">
+              <div class="sticky-gallery-shell">
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-left-1"
+                      alt="Football players warming up for a match"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Warm-Up</span>
+                        <h3 class="font-anton text-2xl">
+                          The tempo starts before kickoff
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-left-2"
+                      alt="Players contesting the ball during a soccer game"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Competition</span>
+                        <h3 class="font-anton text-2xl">
+                          Quick feet, quick decisions
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-left-3"
+                      alt="Friends enjoying football together outdoors"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Friends</span>
+                        <h3 class="font-anton text-2xl">
+                          Good games create good stories
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="sticky-gallery-center">
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="soccer-center-1"
+                      alt="Athletes playing soccer on an outdoor pitch"
+                    />
+                  </figure>
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="soccer-center-2"
+                      alt="Soccer ball and players in motion on the field"
+                    />
+                  </figure>
+                  <div class="sticky-gallery-note">
+                    <div
+                      class="gallery-section-menu"
+                      aria-label="Gallery Sections"
+                    >
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="paintball"
+                        aria-pressed="false"
+                      >
+                        Paintball Arena
+                      </button>
+                      <button
+                        class="gallery-section-button is-active"
+                        type="button"
+                        data-gallery-target="soccer"
+                        aria-pressed="true"
+                      >
+                        Beach Soccer
+                      </button>
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="groups"
+                        aria-pressed="false"
+                      >
+                        Groups & Events
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-right-1"
+                      alt="Goal celebration after a football match"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Celebration</span>
+                        <h3 class="font-anton text-2xl">
+                          Every goal changes the mood
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-right-2"
+                      alt="Players pushing forward in a soccer match"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Momentum</span>
+                        <h3 class="font-anton text-2xl">
+                          The pace never really drops
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="soccer-right-3"
+                      alt="Team huddle before starting a football game"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Squad</span>
+                        <h3 class="font-anton text-2xl">
+                          Bring your people and run it back
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <section class="gallery-panel" data-gallery-panel="groups">
+              <div class="sticky-gallery-shell">
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-left-1"
+                      alt="Friends arriving together for an outdoor event"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Arrival</span>
+                        <h3 class="font-anton text-2xl">
+                          Big energy starts at check-in
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-left-2"
+                      alt="Group of friends smiling together outdoors"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Connection</span>
+                        <h3 class="font-anton text-2xl">
+                          The people make the day louder
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-left-3"
+                      alt="Outdoor celebration with a group of guests"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Occasion</span>
+                        <h3 class="font-anton text-2xl">
+                          From casual hangs to planned events
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="sticky-gallery-center">
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="groups-center-1"
+                      alt="Large group enjoying time together outdoors"
+                    />
+                  </figure>
+                  <figure class="sticky-gallery-feature">
+                    <img
+                      data-gallery-image="groups-center-2"
+                      alt="Friends sharing a lively outdoor moment"
+                    />
+                  </figure>
+                  <div class="sticky-gallery-note">
+                    <div
+                      class="gallery-section-menu"
+                      aria-label="Gallery Sections"
+                    >
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="paintball"
+                        aria-pressed="false"
+                      >
+                        Paintball Arena
+                      </button>
+                      <button
+                        class="gallery-section-button"
+                        type="button"
+                        data-gallery-target="soccer"
+                        aria-pressed="false"
+                      >
+                        Beach Soccer
+                      </button>
+                      <button
+                        class="gallery-section-button is-active"
+                        type="button"
+                        data-gallery-target="groups"
+                        aria-pressed="true"
+                      >
+                        Groups & Events
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sticky-gallery-column">
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-right-1"
+                      alt="Outdoor group sharing a scenic experience together"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Atmosphere</span>
+                        <h3 class="font-anton text-2xl">
+                          The setting does part of the work
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-right-2"
+                      alt="Friends taking photos together during an event"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Memories</span>
+                        <h3 class="font-anton text-2xl">
+                          The camera roll stays busy
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <figure class="sticky-gallery-card">
+                    <img
+                      data-gallery-image="groups-right-3"
+                      alt="Team members spending quality time together outdoors"
+                    />
+                    <figcaption class="sticky-gallery-meta">
+                      <div>
+                        <span class="sticky-gallery-tag">Team Day</span>
+                        <h3 class="font-anton text-2xl">
+                          Everyone leaves with something to talk about
+                        </h3>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="py-24 relative overflow-hidden">
+          <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
+            <div
+              class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+            ></div>
+          </div>
+          <div class="relative z-10 container mx-auto px-6 text-center">
+            <h2
+              class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter"
+            >
+              Ready to Play?
+            </h2>
+            <p
+              class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest"
+            >
+              Book your session today and experience the thrill.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-6"
+            >
+              <a
+                href="booking.html"
+                id="final-book-button"
+                class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1"
+              >
+                Book Now
+              </a>
+              <div class="flex items-center gap-3 text-white">
+                <iconify-icon
+                  icon="mdi:whatsapp"
+                  class="text-3xl"
+                ></iconify-icon>
+                <span class="text-xl font-bold">09048888466</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-[#111111] py-16 border-t border-white/5">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+              <img
+                src="assets/images/logo.png"
+                alt="LSP Logo"
+                class="h-12 mb-6"
+              />
+              <p class="text-muted text-sm leading-relaxed">
+                Nautica Beach paintball and soccer - Action. Adrenaline.
+                Unforgettable Fun.
+              </p>
+            </div>
+            <div>
+              <h6 class="text-white mb-6 tracking-widest text-sm uppercase">
+                Quick Links
+              </h6>
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="about.html"
+                    id="footer-about-link"
+                    class="text-muted hover:text-[#ec1c25] text-sm transition-colors"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    id="footer-pricing-link"
+                    class="text-muted hover:text-[#ec1c25] text-sm transition-colors"
+                    >Pricing & Packages</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gallery.html"
+                    id="footer-waiver-link"
+                    class="text-muted hover:text-[#ec1c25] text-sm transition-colors"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="frequently-asked-questions.html"
+                    id="footer-faq-link"
+                    class="text-muted hover:text-[#ec1c25] text-sm transition-colors"
+                    >FAQs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6 class="text-white mb-6 tracking-widest text-sm uppercase">
+                Location
+              </h6>
+              <p class="text-muted text-sm">
+                Nautica Beach Resort,<br />
+                Elegushi, Ikate, Lekki,<br />
+                Lagos, Nigeria
+              </p>
+            </div>
+            <div>
+              <h6 class="text-white mb-6 tracking-widest text-sm uppercase">
+                Social Media
+              </h6>
+              <div class="flex gap-4">
+                <a
+                  href="https://instagram.com/nauticabeachpaintball"
+                  id="instagram-link"
+                  class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ec1c25] transition-all"
+                >
+                  <iconify-icon
+                    icon="mdi:instagram"
+                    class="text-xl"
+                  ></iconify-icon>
                 </a>
-                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
-                    <a href="index.html" id="header-home-link" class="hover:text-primary-red transition-colors">Home</a>
-                    <a href="about.html" id="header-about-link" class="hover:text-primary-red transition-colors">About</a>
-                    <a href="rules-and-safety.html" id="header-rules-link" class="hover:text-primary-red transition-colors">Rules</a>
-                    <a href="gallery.html" id="header-gallery-link" class="text-primary-red">Gallery</a>
-                    <a href="frequently-asked-questions.html" id="header-faq-link" class="hover:text-primary-red transition-colors">FAQs</a>
-                    <a href="testimonials.html" id="header-testimonials-link" class="hover:text-primary-red transition-colors">Testimonials</a>
-                    <a href="contact.html" id="header-contact-link" class="hover:text-primary-red transition-colors">Contact</a>
-                </nav>
-                <div class="flex items-center space-x-6">
-                    <a href="booking.html" id="header-book-button" class="hidden sm:flex bg-[#ec1c25] hover:bg-[#ff3333] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all tracking-wider uppercase">
-                        Book Session
-                    </a>
-                    <button class="lg:hidden text-white text-3xl" id="mobile-menu-button">
-                        <iconify-icon icon="lucide:menu"></iconify-icon>
-                    </button>
-                </div>
+                <a
+                  href="https://tiktok.com/@nauticabeachpaintball"
+                  id="tiktok-link"
+                  class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ec1c25] transition-all"
+                >
+                  <iconify-icon
+                    icon="iconoir:tiktok"
+                    class="text-xl"
+                  ></iconify-icon>
+                </a>
+              </div>
             </div>
-        </header>
-
-        <main class="flex-grow pt-20">
-            <section class="gallery-hero-panel text-white min-h-[62vh] w-full grid place-content-center sticky top-0">
-                <div class="gallery-hero-copy max-w-6xl mx-auto px-8">
-                    <span class="text-primary-red font-bold uppercase tracking-[0.45em] text-xs mb-6 block text-center">
-                        LSP Visual Archive
-                    </span>
-                    <h1 class="2xl:text-7xl text-5xl font-semibold text-center tracking-tight leading-[120%] uppercase ">
-                        See the energy at
-                        <br>
-                        LSP PAINTBALL & SOCCER  NAUTICA BEACH
-                        <br>
-                        and switch through the moments below
-                    </h1>
-                    <div class="gallery-scroll-indicator" aria-hidden="true">
-                        <span class="gallery-scroll-indicator__mouse">
-                            <span class="gallery-scroll-indicator__wheel"></span>
-                        </span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="gallery-sections" class="w-full bg-slate-950 text-white pb-24">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                    <section class="gallery-panel is-loading" data-gallery-panel="paintball">
-                        <div class="sticky-gallery-shell">
-                        <div class="sticky-gallery-column">
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-left-1" alt="Players preparing for a match">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Briefing</span>
-                                        <h3 class="font-anton text-2xl">Mission Starts Here</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-left-2" alt="High-energy game moment">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Paintball</span>
-                                        <h3 class="font-anton text-2xl">Pressure and Precision</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-left-3" alt="Team moving through the arena">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Teamwork</span>
-                                        <h3 class="font-anton text-2xl">Move as One</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-left-4" alt="Outdoor action atmosphere">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Atmosphere</span>
-                                        <h3 class="font-anton text-2xl">Open-Air Adrenaline</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-left-5" alt="Friends celebrating after a game">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Group Fun</span>
-                                        <h3 class="font-anton text-2xl">Victory Feels Better Together</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="sticky-gallery-center">
-                            <figure class="sticky-gallery-feature">
-                                <img data-gallery-image="paintball-center-1" alt="Featured arena action shot">
-                            </figure>
-                            <figure class="sticky-gallery-feature">
-                                <img data-gallery-image="paintball-center-2" alt="Featured football gallery image">
-                            </figure>
-                            <div class="sticky-gallery-note">
-                                <div class="gallery-section-menu" aria-label="Gallery Sections">
-                                    <button class="gallery-section-button is-active" type="button" data-gallery-target="paintball" aria-pressed="true">
-                                        Paintball Arena
-                                    </button>
-                                    <button class="gallery-section-button" type="button" data-gallery-target="soccer" aria-pressed="false">
-                                        Beach Soccer
-                                    </button>
-                                    <button class="gallery-section-button" type="button" data-gallery-target="groups" aria-pressed="false">
-                                        Groups & Events
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sticky-gallery-column">
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-right-1" alt="Coastal outdoor recreation scene">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Beachside</span>
-                                        <h3 class="font-anton text-2xl">Lagos Energy</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-right-2" alt="Friends relaxing between activities">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Moments</span>
-                                        <h3 class="font-anton text-2xl">Between the Battles</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-right-3" alt="Active lifestyle sports image">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Motion</span>
-                                        <h3 class="font-anton text-2xl">Full-Speed Sessions</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-right-4" alt="Outdoor sports environment">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Experience</span>
-                                        <h3 class="font-anton text-2xl">The Day Stays With You</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="sticky-gallery-card">
-                                <img data-gallery-image="paintball-right-5" alt="Final gallery image from the experience">
-                                <figcaption class="sticky-gallery-meta">
-                                    <div>
-                                        <span class="sticky-gallery-tag">Finish Strong</span>
-                                        <h3 class="font-anton text-2xl">Last Shot, Last Look</h3>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    </section>
-
-                    <section class="gallery-panel" data-gallery-panel="soccer">
-                        <div class="sticky-gallery-shell">
-                            <div class="sticky-gallery-column">
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-left-1" alt="Football players warming up for a match">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Warm-Up</span>
-                                            <h3 class="font-anton text-2xl">The tempo starts before kickoff</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-left-2" alt="Players contesting the ball during a soccer game">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Competition</span>
-                                            <h3 class="font-anton text-2xl">Quick feet, quick decisions</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-left-3" alt="Friends enjoying football together outdoors">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Friends</span>
-                                            <h3 class="font-anton text-2xl">Good games create good stories</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="sticky-gallery-center">
-                                <figure class="sticky-gallery-feature">
-                                    <img data-gallery-image="soccer-center-1" alt="Athletes playing soccer on an outdoor pitch">
-                                </figure>
-                                <figure class="sticky-gallery-feature">
-                                    <img data-gallery-image="soccer-center-2" alt="Soccer ball and players in motion on the field">
-                                </figure>
-                                <div class="sticky-gallery-note">
-                                    <div class="gallery-section-menu" aria-label="Gallery Sections">
-                                        <button class="gallery-section-button" type="button" data-gallery-target="paintball" aria-pressed="false">
-                                            Paintball Arena
-                                        </button>
-                                        <button class="gallery-section-button is-active" type="button" data-gallery-target="soccer" aria-pressed="true">
-                                            Beach Soccer
-                                        </button>
-                                        <button class="gallery-section-button" type="button" data-gallery-target="groups" aria-pressed="false">
-                                            Groups & Events
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sticky-gallery-column">
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-right-1" alt="Goal celebration after a football match">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Celebration</span>
-                                            <h3 class="font-anton text-2xl">Every goal changes the mood</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-right-2" alt="Players pushing forward in a soccer match">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Momentum</span>
-                                            <h3 class="font-anton text-2xl">The pace never really drops</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="soccer-right-3" alt="Team huddle before starting a football game">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Squad</span>
-                                            <h3 class="font-anton text-2xl">Bring your people and run it back</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="gallery-panel" data-gallery-panel="groups">
-                        <div class="sticky-gallery-shell">
-                            <div class="sticky-gallery-column">
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-left-1" alt="Friends arriving together for an outdoor event">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Arrival</span>
-                                            <h3 class="font-anton text-2xl">Big energy starts at check-in</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-left-2" alt="Group of friends smiling together outdoors">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Connection</span>
-                                            <h3 class="font-anton text-2xl">The people make the day louder</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-left-3" alt="Outdoor celebration with a group of guests">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Occasion</span>
-                                            <h3 class="font-anton text-2xl">From casual hangs to planned events</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="sticky-gallery-center">
-                                <figure class="sticky-gallery-feature">
-                                    <img data-gallery-image="groups-center-1" alt="Large group enjoying time together outdoors">
-                                </figure>
-                                <figure class="sticky-gallery-feature">
-                                    <img data-gallery-image="groups-center-2" alt="Friends sharing a lively outdoor moment">
-                                </figure>
-                                <div class="sticky-gallery-note">
-                                    <div class="gallery-section-menu" aria-label="Gallery Sections">
-                                        <button class="gallery-section-button" type="button" data-gallery-target="paintball" aria-pressed="false">
-                                            Paintball Arena
-                                        </button>
-                                        <button class="gallery-section-button" type="button" data-gallery-target="soccer" aria-pressed="false">
-                                            Beach Soccer
-                                        </button>
-                                        <button class="gallery-section-button is-active" type="button" data-gallery-target="groups" aria-pressed="true">
-                                            Groups & Events
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sticky-gallery-column">
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-right-1" alt="Outdoor group sharing a scenic experience together">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Atmosphere</span>
-                                            <h3 class="font-anton text-2xl">The setting does part of the work</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-right-2" alt="Friends taking photos together during an event">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Memories</span>
-                                            <h3 class="font-anton text-2xl">The camera roll stays busy</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="sticky-gallery-card">
-                                    <img data-gallery-image="groups-right-3" alt="Team members spending quality time together outdoors">
-                                    <figcaption class="sticky-gallery-meta">
-                                        <div>
-                                            <span class="sticky-gallery-tag">Team Day</span>
-                                            <h3 class="font-anton text-2xl">Everyone leaves with something to talk about</h3>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-
-            <section class="py-24 relative overflow-hidden">
-                <div class="absolute inset-0 z-0">
-                    <div class="absolute top-0 left-0 w-full h-full bg-[#ec1c25]"></div>
-                    <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-                </div>
-                <div class="relative z-10 container mx-auto px-6 text-center">
-                    <h2 class="font-anton text-[clamp(36px,6vw,63px)] leading-[1.1] text-white mb-6 tracking-tighter">Ready to Play?</h2>
-                    <p class="text-xl mb-12 max-w-2xl mx-auto font-medium text-white/90 uppercase tracking-widest">
-                        Book your session today and experience the thrill.
-                    </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <a href="booking.html" id="final-book-button" class="bg-white text-[#ec1c25] px-12 py-5 rounded-md font-anton text-xl uppercase tracking-wider hover:bg-black hover:text-white transition-all transform hover:-translate-y-1">
-                            Book Now
-                        </a>
-                        <div class="flex items-center gap-3 text-white">
-                            <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-                            <span class="text-xl font-bold">09048888466</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-black pt-20 pb-10 border-t border-white/5">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                    <div>
-                        <img src="assets/images/logo.png" alt="LSP Logo" class="h-16 mb-8">
-                        <p class="text-white/50 text-sm leading-relaxed">
-                            Lagos' premier speedball and beach soccer arena. Action-packed fun for the whole family at Nautica Beach.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Get In Touch</h4>
-                        <ul class="space-y-4 text-sm text-white/70">
-                            <li class="flex items-start">
-                                <iconify-icon icon="lucide:map-pin" class="mr-3 text-primary-red mt-1"></iconify-icon>
-                                Nautica Beach Resort, Elegushi, Ikate, Lekki
-                            </li>
-                            <li class="flex items-center">
-                                <iconify-icon icon="lucide:phone" class="mr-3 text-primary-red"></iconify-icon>
-                                09048888466
-                            </li>
-                            <li class="flex items-center">
-                                <iconify-icon icon="lucide:mail" class="mr-3 text-primary-red"></iconify-icon>
-                                lspparknautica@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Quick Links</h4>
-                        <ul class="space-y-3 text-sm text-white/70">
-                            <li><a href="about.html" id="footer-pricing-link" class="hover:text-primary-red transition-colors">View Pricing</a></li>
-                            <li><a href="rules-and-safety.html" id="footer-rules-link" class="hover:text-primary-red transition-colors">Arena Rules</a></li>
-                            <li><a href="waiver.html" id="footer-waiver-link" class="hover:text-primary-red transition-colors">Sign Waiver</a></li>
-                            <li><a href="frequently-asked-questions.html" id="footer-faq-link" class="hover:text-primary-red transition-colors">Safety FAQs</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="font-anton text-xl mb-6 uppercase tracking-wider">Follow Action</h4>
-                        <div class="flex space-x-4 mb-8">
-                            <a href="https://instagram.com/nauticabeachpaintball" id="footer-instagram-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
-                                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
-                            </a>
-                            <a href="https://tiktok.com/@nauticabeachpaintball" id="footer-tiktok-link" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-red transition-all">
-                                <iconify-icon icon="simple-icons:tiktok" class="text-xl"></iconify-icon>
-                            </a>
-                        </div>
-                        <p class="text-[10px] uppercase tracking-widest text-white/30 font-bold">@nauticabeachpaintball</p>
-                    </div>
-                </div>
-
-                <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 uppercase tracking-[0.2em]">
-                    <p>&copy; 2026 Lagos Speedball Park. All Rights Reserved.</p>
-                    
-                </div>
+          </div>
+          <div
+            class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
+          >
+            <p class="text-muted text-xs">
+              © 2026 Nautica Beach paintball and soccer. All rights reserved.
+            </p>
+            <div class="flex gap-8">
+              <a
+                href="waiver.html"
+                id="privacy-link"
+                class="text-muted text-xs hover:text-white"
+                >Waiver Form</a
+              >
+              <a
+                href="rules-and-safety.html"
+                id="terms-link"
+                class="text-muted text-xs hover:text-white"
+                >Rules/Safety</a
+              >
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
     <script>
-        (function () {
-            const galleryImageMap = {
-                'paintball-left-1': 'assets/images/IMG_1127.webp',
-                'paintball-left-2': 'assets/images/IMG_1129.webp',
-                'paintball-left-3': 'assets/images/IMG_2859.webp',
-                'paintball-left-4': 'assets/images/IMG_2862.webp',
-                'paintball-left-5': 'assets/images/IMG_2863.webp',
-                'paintball-center-1': 'assets/images/IMG_2866.webp',
-                'paintball-center-2': 'assets/images/IMG_2867.webp',
-                'paintball-right-1': 'assets/images/IMG_2870.webp',
-                'paintball-right-2': 'assets/images/IMG_2876.webp',
-                'paintball-right-3': 'assets/images/IMG_2877.webp',
-                'paintball-right-4': 'assets/images/IMG_2882.webp',
-                'paintball-right-5': 'assets/images/IMG_2885.webp',
-                'soccer-left-1': 'assets/images/IMG_2886.webp',
-                'soccer-left-2': 'assets/images/IMG_4537.webp',
-                'soccer-left-3': 'assets/images/IMG_4538.webp',
-                'soccer-center-1': 'assets/images/IMG_4544.webp',
-                'soccer-center-2': 'assets/images/IMG_5460.webp',
-                'soccer-right-1': 'assets/images/IMG_5470.webp',
-                'soccer-right-2': 'assets/images/IMG_5476.webp',
-                'soccer-right-3': 'assets/images/IMG_5501.webp',
-                'groups-left-1': 'assets/images/IMG_6724.webp',
-                'groups-left-2': 'assets/images/IMG_6731.webp',
-                'groups-left-3': 'assets/images/IMG_6734.webp',
-                'groups-center-1': 'assets/images/IMG_6735.webp',
-                'groups-center-2': 'assets/images/IMG_6745.webp',
-                'groups-right-1': 'assets/images/IMG_9470.webp',
-                'groups-right-2': 'assets/images/IMG_9472.webp',
-                'groups-right-3': 'assets/images/IMG_9476.webp'
-            };
-            const buttons = document.querySelectorAll('[data-gallery-target]');
-            const galleryImages = document.querySelectorAll('[data-gallery-image]');
-            const panels = document.querySelectorAll('[data-gallery-panel]');
-            const gallerySections = document.getElementById('gallery-sections');
-            const headerOffset = 96;
-            let galleryLoadTimer = null;
+      (function () {
+        const galleryImageMap = {
+          "paintball-left-1": "assets/images/IMG_1127.webp",
+          "paintball-left-2": "assets/images/IMG_1129.webp",
+          "paintball-left-3": "assets/images/IMG_2859.webp",
+          "paintball-left-4": "assets/images/IMG_2862.webp",
+          "paintball-left-5": "assets/images/IMG_2863.webp",
+          "paintball-center-1": "assets/images/IMG_2866.webp",
+          "paintball-center-2": "assets/images/IMG_2867.webp",
+          "paintball-right-1": "assets/images/IMG_2870.webp",
+          "paintball-right-2": "assets/images/IMG_2876.webp",
+          "paintball-right-3": "assets/images/IMG_2877.webp",
+          "paintball-right-4": "assets/images/IMG_2882.webp",
+          "paintball-right-5": "assets/images/IMG_2885.webp",
+          "soccer-left-1": "assets/images/IMG_2886.webp",
+          "soccer-left-2": "assets/images/IMG_4537.webp",
+          "soccer-left-3": "assets/images/IMG_4538.webp",
+          "soccer-center-1": "assets/images/IMG_4544.webp",
+          "soccer-center-2": "assets/images/IMG_5460.webp",
+          "soccer-right-1": "assets/images/IMG_5470.webp",
+          "soccer-right-2": "assets/images/IMG_5476.webp",
+          "soccer-right-3": "assets/images/IMG_5501.webp",
+          "groups-left-1": "assets/images/IMG_6724.webp",
+          "groups-left-2": "assets/images/IMG_6731.webp",
+          "groups-left-3": "assets/images/IMG_6734.webp",
+          "groups-center-1": "assets/images/IMG_6735.webp",
+          "groups-center-2": "assets/images/IMG_6745.webp",
+          "groups-right-1": "assets/images/IMG_9470.webp",
+          "groups-right-2": "assets/images/IMG_9472.webp",
+          "groups-right-3": "assets/images/IMG_9476.webp",
+        };
+        const buttons = document.querySelectorAll("[data-gallery-target]");
+        const galleryImages = document.querySelectorAll("[data-gallery-image]");
+        const panels = document.querySelectorAll("[data-gallery-panel]");
+        const gallerySections = document.getElementById("gallery-sections");
+        const headerOffset = 96;
+        let galleryLoadTimer = null;
 
-            function hydrateGalleryImages() {
-                galleryImages.forEach((image) => {
-                    const imageKey = image.getAttribute('data-gallery-image');
-                    const imageSrc = imageKey ? galleryImageMap[imageKey] : '';
+        function hydrateGalleryImages() {
+          galleryImages.forEach((image) => {
+            const imageKey = image.getAttribute("data-gallery-image");
+            const imageSrc = imageKey ? galleryImageMap[imageKey] : "";
 
-                    if (imageSrc) {
-                        image.src = imageSrc;
-                    }
-                });
+            if (imageSrc) {
+              image.src = imageSrc;
             }
+          });
+        }
 
-            function waitForPanelImages(panel) {
-                const panelImages = panel ? panel.querySelectorAll('img[data-gallery-image]') : [];
+        function waitForPanelImages(panel) {
+          const panelImages = panel
+            ? panel.querySelectorAll("img[data-gallery-image]")
+            : [];
 
-                return Promise.all(Array.from(panelImages).map((image) => {
-                    if (image.complete && image.naturalWidth > 0) {
-                        return Promise.resolve();
-                    }
+          return Promise.all(
+            Array.from(panelImages).map((image) => {
+              if (image.complete && image.naturalWidth > 0) {
+                return Promise.resolve();
+              }
 
-                    return new Promise((resolve) => {
-                        const finish = () => {
-                            image.removeEventListener('load', finish);
-                            image.removeEventListener('error', finish);
-                            resolve();
-                        };
+              return new Promise((resolve) => {
+                const finish = () => {
+                  image.removeEventListener("load", finish);
+                  image.removeEventListener("error", finish);
+                  resolve();
+                };
 
-                        image.addEventListener('load', finish, { once: true });
-                        image.addEventListener('error', finish, { once: true });
-                    });
-                }));
-            }
+                image.addEventListener("load", finish, { once: true });
+                image.addEventListener("error", finish, { once: true });
+              });
+            }),
+          );
+        }
 
-            function revealPanel(panel) {
-                panel.classList.remove('is-loading');
-                void panel.offsetWidth;
-                panel.classList.add('is-active');
-            }
+        function revealPanel(panel) {
+          panel.classList.remove("is-loading");
+          void panel.offsetWidth;
+          panel.classList.add("is-active");
+        }
 
-            function activatePanel(target) {
-                const targetPanel = Array.from(panels).find((panel) => {
-                    return panel.getAttribute('data-gallery-panel') === target;
-                });
+        function activatePanel(target) {
+          const targetPanel = Array.from(panels).find((panel) => {
+            return panel.getAttribute("data-gallery-panel") === target;
+          });
 
-                if (!targetPanel || targetPanel.classList.contains('is-active')) {
-                    return;
-                }
+          if (!targetPanel || targetPanel.classList.contains("is-active")) {
+            return;
+          }
 
-                if (galleryLoadTimer) {
-                    window.clearTimeout(galleryLoadTimer);
-                }
+          if (galleryLoadTimer) {
+            window.clearTimeout(galleryLoadTimer);
+          }
 
-                buttons.forEach((button) => {
-                    const isActive = button.getAttribute('data-gallery-target') === target;
-                    button.classList.toggle('is-active', isActive);
-                    button.setAttribute('aria-pressed', String(isActive));
-                });
+          buttons.forEach((button) => {
+            const isActive =
+              button.getAttribute("data-gallery-target") === target;
+            button.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+          });
 
-                panels.forEach((panel) => {
-                    panel.classList.remove('is-active', 'is-loading');
-                });
+          panels.forEach((panel) => {
+            panel.classList.remove("is-active", "is-loading");
+          });
 
-                targetPanel.classList.add('is-loading');
+          targetPanel.classList.add("is-loading");
 
-                if (gallerySections) {
-                    const top = gallerySections.getBoundingClientRect().top + window.scrollY - headerOffset;
-                    window.scrollTo({
-                        top: Math.max(top, 0),
-                        behavior: 'smooth'
-                    });
-                }
-
-                galleryLoadTimer = window.setTimeout(() => {
-                    waitForPanelImages(targetPanel).then(() => {
-                        revealPanel(targetPanel);
-                    });
-                }, 260);
-            }
-
-            buttons.forEach((button) => {
-                button.addEventListener('click', function () {
-                    const target = this.getAttribute('data-gallery-target');
-                    if (target) {
-                        activatePanel(target);
-                    }
-                });
+          if (gallerySections) {
+            const top =
+              gallerySections.getBoundingClientRect().top +
+              window.scrollY -
+              headerOffset;
+            window.scrollTo({
+              top: Math.max(top, 0),
+              behavior: "smooth",
             });
+          }
 
-            hydrateGalleryImages();
+          galleryLoadTimer = window.setTimeout(() => {
+            waitForPanelImages(targetPanel).then(() => {
+              revealPanel(targetPanel);
+            });
+          }, 260);
+        }
 
-            const initialPanel = document.querySelector('[data-gallery-panel].is-active, [data-gallery-panel].is-loading');
-
-            if (initialPanel) {
-                initialPanel.classList.remove('is-active');
-                initialPanel.classList.add('is-loading');
-
-                waitForPanelImages(initialPanel).then(() => {
-                    revealPanel(initialPanel);
-                });
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const target = this.getAttribute("data-gallery-target");
+            if (target) {
+              activatePanel(target);
             }
-        }());
+          });
+        });
+
+        hydrateGalleryImages();
+
+        const initialPanel = document.querySelector(
+          "[data-gallery-panel].is-active, [data-gallery-panel].is-loading",
+        );
+
+        if (initialPanel) {
+          initialPanel.classList.remove("is-active");
+          initialPanel.classList.add("is-loading");
+
+          waitForPanelImages(initialPanel).then(() => {
+            revealPanel(initialPanel);
+          });
+        }
+      })();
     </script>
     <script>
-        (function () {
-            function updateHeaderScrollState() {
-                document.body.classList.toggle('nav-scrolled', window.scrollY > 8);
-            }
+      (function () {
+        function updateHeaderScrollState() {
+          document.body.classList.toggle("nav-scrolled", window.scrollY > 8);
+        }
 
-            updateHeaderScrollState();
-            window.addEventListener('scroll', updateHeaderScrollState, {
-                passive: true
-            });
-        }());
+        updateHeaderScrollState();
+        window.addEventListener("scroll", updateHeaderScrollState, {
+          passive: true,
+        });
+      })();
     </script>
     <script src="scripts/mobile-nav.js"></script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
